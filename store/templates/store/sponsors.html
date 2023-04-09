@@ -1,0 +1,1011 @@
+{% load static %}
+{% block content %}
+
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+<!-- CSS only -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.14.0/css/all.css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href='/static/css/sponsors.css'>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<!--Javascript Only-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+<body style="background-color: rgb(13 16 24);">
+    <div class="warning-header" id="warningheader">
+        <h2>You are viewing this page on an unsupported browser or device. For
+            best performance, use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or <a
+                href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a></h2>
+        <span onclick="hide();" style="cursor: pointer">Dismiss</span>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/"><img src="/static/images/hackx-logo.png"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link home-navbar" href='/'>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link information-navbar" href='/#content-2'>Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link faq-navbar" href="/#faq-heading">FAQ</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link schedule-navbar" href="/#schedule-heading">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link sponsors-navbar" href="/sponsors/">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about-navbar" href="/#about-heading">Team</a>
+                    </li>
+
+
+
+                </ul>
+
+            </div>
+            <div class="navbar-right">
+                <div class="social-icons-navbar">
+
+                    <a target="_blank" href="https://discord.gg/PDp8SZBtG8" class="navbar-right-discord">
+                        <img
+                            src="https://assets-global.website-files.com/625c39b93541414104a1d654/62734bb8fdadb403a9cf6319_discord.svg">
+                    </a>
+                    <a class="navbar-right-devpost">
+                        <img src=/static/images/devpost.png>
+                    </a>
+                    <a class="navbar-right-slack">
+                        <img src=/static/images/slack.svg>
+                    </a>
+                    
+                </div>
+                <div class="lghs-banner">
+                    <a target="_blank" href="https://www.lghs.net/">
+                        <img class="lghs-banner-image" src="/static/images/lghs-banner.png">
+                    </a>
+                </div>
+                <ul class="toggle">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div class="sidebar">
+                    <ul class="menu">
+                        <div class="menu-text">
+                            <p>Menu</p>
+                        </div>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#content-2">Information</a></li>
+                        <li><a href="/#faq-heading">FAQ</a></li>
+                        <li><a href="/#schedule-heading">Schedule</a></li>
+                        <li><a href="/sponsors/">Sponsors</a></li>
+                        <li><a href="/#about-heading">Team</a></li>
+
+                    </ul>
+                    <ul class="social-icon">
+                        <a target="_blank" href="https://discord.gg/PDp8SZBtG8" class="social-icon-discord">
+                            <img
+                                src="https://assets-global.website-files.com/625c39b93541414104a1d654/62734bb8fdadb403a9cf6319_discord.svg">
+                        </a>
+                        <a class="social-icon-devpost">
+                            <img src=/static/images/devpost.png>
+                        </a>
+                        <a class="social-icon-slack">
+                            <img src=/static/images/slack.svg>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <div class="sponsor-content-1">
+        <!--    <div class="about-heading">-->
+        <!--        <h2>Our Team</h2>-->
+        <!--    </div>-->
+        <!--    <div class="satellite2">-->
+        <!--        <img src="/static/images/satellite.png">-->
+        <!--    </div>-->
+        <!--    <div class="telescope">-->
+        <!--        <img src="/static/images/telescope.png">-->
+        <!--    </div>-->
+        <!--    <div class="large-team-container">-->
+        <!--        <div class="large-team-card">-->
+        <!--            <div class="large-team-image">-->
+        <!--                <div class="image-card-container">-->
+        <!--                    <div class="image-card">-->
+        <!--                        <div class="image-card-name">-->
+        <!--                            <p>Edwin Hou</p>-->
+        <!--                        </div>-->
+        <!--                        <div class="image-card-paragraph">-->
+        <!--                            <p>Edwin Hou is an award-losing full-stack software developer and self-proclaimed Stack Overflow enthusiast. Edwin Hou is a high school student currently attending Los Gatos High School and a two-time American-->
+        <!--                                Invitational Mathematics Examination qualifier. In his fleeting free time, he enjoys playing Clash Royale (top 10k btw), creating useless python automation scripts, designing websites, and publishing math-related memes on Reddit.</p>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <img src="/static/images/Edwin.jpg">-->
+
+        <!--            </div>-->
+
+        <!--            <div class="large-team-name">-->
+        <!--                <p>Edwin Hou</p>-->
+        <!--            </div>-->
+        <!--            <div class="large-team-position">-->
+        <!--                <p>Co Founder</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="large-team-card">-->
+        <!--            <div class="large-team-image">-->
+        <!--                <div class="image-card-container">-->
+        <!--                    <div class="image-card-2">-->
+        <!--                        <div class="image-card-name">-->
+        <!--                            <p>Eric Hou</p>-->
+        <!--                        </div>-->
+        <!--                        <div class="image-card-paragraph">-->
+        <!--                            <p>Eric Hou is an award-losing full-stack developer and professional code copyist. He currently attends Raymond J. Fisher Middle School as an 8th grader. Eric is part of the top 1% of competitors on the AMC8 and is also a USACO Silver competitor and made it his life mission to help others . In his fleeting free time, he enjoys talking to friends, designing websites, playing video games, and struggling at math.</p>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--                <img src="/static/images/coming-soon.png">-->
+        <!--            </div>-->
+        <!--            <div class="large-team-name">-->
+        <!--                <p>Eric Hou</p>-->
+        <!--            </div>-->
+        <!--            <div class="large-team-position">-->
+        <!--                <p>Co Founder</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--    <div class="team-container">-->
+        <!--        <div class="team-card">-->
+        <!--            <div class="team-image">-->
+        <!--                <img src="/static/images/coming-soon.png">-->
+        <!--            </div>-->
+        <!--            <div class="team-name">-->
+        <!--                <p>Henry Lee</p>-->
+        <!--            </div>-->
+        <!--            <div class="team-position">-->
+        <!--                <p>Chief Operations Officer</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="team-card">-->
+        <!--            <div class="team-image">-->
+        <!--                <img src="/static/images/Andreas.png">-->
+        <!--            </div>-->
+        <!--            <div class="team-name">-->
+        <!--                <p>Andreas Haapalainen</p>-->
+        <!--            </div>-->
+        <!--            <div class="team-position">-->
+        <!--                <p>Chief Marketing Director</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="team-card">-->
+        <!--            <div class="team-image">-->
+        <!--                <img src="/static/images/Ashir.png">-->
+        <!--            </div>-->
+        <!--            <div class="team-name">-->
+        <!--                <p>Ashir Rao</p>-->
+        <!--            </div>-->
+        <!--            <div class="team-position">-->
+        <!--                <p>Lead Software Engineer</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="team-card">-->
+        <!--            <div class="team-image">-->
+        <!--                <img src="/static/images/coming-soon.png">-->
+        <!--            </div>-->
+        <!--            <div class="team-name">-->
+        <!--                <p>Naitik Gupta</p>-->
+        <!--            </div>-->
+        <!--            <div class="team-position">-->
+        <!--                <p>Software Engineer</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="team-card">-->
+        <!--            <div class="team-image">-->
+        <!--                <img src="/static/images/coming-soon.png">-->
+        <!--            </div>-->
+        <!--            <div class="team-name">-->
+        <!--                <p>Gavyn Liu</p>-->
+        <!--            </div>-->
+        <!--            <div class="team-position">-->
+        <!--                <p>Software Engineer</p>-->
+        <!--            </div>-->
+        <!--        </div>-->
+
+        <!--    </div>-->
+        <div class="sponsors-top-container">
+            <div class="sponsors-text-container">
+                <div class="top-caption">
+                    <p>200+ attendees. Swag. Demos. Recruiting. And more.</p>
+                </div>
+                <div class="top-heading">
+                    <span>Make HackX your own.</span>
+                </div>
+                <div class="top-sub-heading">
+                    <p>One of the largest high school/middle school hackathon on the West Coast is the perfect
+                        opportunity for you to establish your brand and connect with the next generation of dreamers and
+                        doers.</p>
+                </div>
+                <div class="top-button">
+                    <button>
+                        <a href="/">Get in touch!</a>
+                    </button>
+                </div>
+                <div class="sponsors-social">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="sponsors-twitter" viewBox="0 0 16 16">
+                        <path
+                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z">
+
+                        </path>
+
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="sponsors-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+
+                        </path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="sponsors-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+
+                        </path>
+                    </svg>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <svg class="top-pattern" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+        preserveAspectRatio="none">
+        <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="fill-white">
+        </path>
+    </svg>
+    <div class="sponsors-container">
+        <div class="mission-statement-container">
+            <div class="mission-statement-heading">
+                <h2>Mission Statement</h2>
+            </div>
+            <div class="mission-statement-paragraph-container">
+                <div class="mission-statement-paragraph">
+                    <p class="paragraph">We inspire programmers of all skill levels to fall in love with technology and
+                        programming; our past six events have served over 2000 Bay Area high schoolers, giving them the
+                        opportunity to learn and apply new skills through the projects they make at our event.</p>
+                    <p class="paragraph">Our hackathons have consistently been the largest highschool hackathon on the
+                        West Coast, and for several of our events, one of the largest highschool hackathons globally.
+                        This year, we are aiming to have 350 attendees, with an emphasis placed on including minority
+                        groups in STEM.</p>
+                    <p class="paragraph">Since we were founded, we have made it our goal to maintain a 1:1 gender ratio
+                        and ensure that students, regardless of their background, can have the opportunity to attend our
+                        hackathon and become inspired to pursue a career in STEM.</p>
+                    <p class="paragraph">For more information, you can reach us at </p>
+                </div>
+            </div>
+            <div class="rocket" id="rocket" data-modifier="1">
+                <img class="rocket-image" src="/static/images/rocket.png">
+            </div>
+            <div class="saturn-sponsors">
+                <img class="saturn-sponsors-img" src="/static/images/saturn.png">
+            </div>
+        </div>
+        <div class="prospectus-container">
+            <div class="prospectus">
+                <div class="prospectus-heading">
+                    <h2>Prospectus</h2>
+                </div>
+                <div class="prospectus-table-container">
+                    <table class="prospectus">
+                        <thead class="prospectus-head">
+                            <tr class="prospectus-head-tr">
+                                <th class></th>
+                                <th class="prospectus-bronze prospectus-tr">Bronze<br>$500</th>
+                                <th class="prospectus-silver prospectus-tr">Silver<br>$1000</th>
+                                <th class="prospectus-gold prospectus-tr">Gold<br>$2500</th>
+                                <th class="prospectus-partner prospectus-tr">Partner*<br>$5000</th>
+                            </tr>
+                        </thead>
+                        <tbody class="prospectus-body">
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td">
+                                    General
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Send Engineers and Mentors
+                                </td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Award Custom Prizes
+                                </td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Distribute Swag (Company Merchandise)
+                                </td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Initial API/Product Demo
+                                </td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Workshop/Side Event
+                                </td>
+                                <td></td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>5</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Sponsor Table
+                                </td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Award Custom Prize Category
+                                </td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Reserved Judging Position
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>1</td>
+                                <td>2</td>
+
+                            </tr>
+
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td">
+                                    Recruiting
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Distribute Recruiting Materials
+                                </td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Send Recruiters
+                                </td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Access to Resumes/GitHubs
+                                </td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Email to All Attendees
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Mailing List
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Interview During Event
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td">
+                                    Branding
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Logo on Website
+                                </td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Logo on T-Shirt
+                                </td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Company Banners
+                                </td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                            <tr class="prospectus-body-tr">
+                                <td class="prospectus-body-td-2">
+                                    Presentation at Awards Ceremony
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td>⨉</td>
+                                <td>⨉</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="prospectus-caption">
+                        <h3>* Partner level has a maximum of 2 sponsors</h3>
+                    </div>
+                    <div class="prospectus-bottom">
+
+                        <div class="prospectus-interested">
+                            <div class="prospectus-logo">
+                                <img src="/static/images/hackx-logo-big.png">
+
+                            </div>
+                            <div class="prospectus-interested-text">
+                                <div class="prospectus-interested-heading">
+                                    <strong>Interested?</strong>
+                                </div>
+                                <div class="prospectus-interested-paragraph">
+                                    <span>Please Contact us at
+                                        <a class="prospectus-interested-a" href="mailto:eric.x.hou@gmail.com">
+                                            sponsor@hackx.com
+
+                                        </a>
+                                        if you are interested. All sponsorships are negotiable and can be discussed in
+                                        more detail. We would be more than happy to discuss a custom sponsorship with
+                                        you.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sponsors-faq-container">
+            <div class="sponsors-faq-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="card-container-2">
+                <div class="2-card-1 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>What is a Hackathon?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Hackathons are fast-paced events where individuals with diverse backgrounds collaborate in
+                            teams to
+                            create software or design solutions to real-world problems within a short timeframe,
+                            typically
+                            ranging from a few hours to a few days. The focus is on creativity, innovation, and
+                            producing a
+                            tangible result by the end of the event.</p>
+                    </div>
+                </div>
+                <div class="2-card-2 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>Is the Hackathon Free?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>HackX is completely free for all participants, offering an opportunity for individuals to
+                            showcase
+                            their
+                            skills and connect with like-minded individuals in the tech industry. </p>
+                    </div>
+                </div>
+                <div class="2-card-2 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>What are the prizes?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>First: Paid Internship at sponsor, iPad 10th generation, Custom built PC with Nvidia 4070 and
+                            Dinner
+                            with mentors <br>
+                            Second: Dinner with mentors<br>
+                            Third: Dinner with mentors<br>
+                            Forth: Logitech C920x Webcam and microphone<br>
+                            Fifth: One year Spotify subscription and mechanical keyboard <br>
+                            Everyone: HackX Branded T-shirt, water bottle and stickers </p>
+                    </div>
+                </div>
+                <div class="2-card-3 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>Is there food provided?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Yes, breakfast, lunch and dinner will be
+                            provided and free of charge. Please let us know of any
+                            accommodations you would like to have.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="2-card-4 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>What is the time, date and location of HackX?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>The first day is fully online which is on June 10th, the second day will be in-person on June
+                            11th at
+                            Los Gatos Highschool in the library. HackX for both days will last from 8AM to 10PM. </p>
+                    </div>
+                </div>
+                <div class="2-card-5 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>When is the application deadline?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>The application deadline is 5/22, make sure to sign up before then! </p>
+                    </div>
+                </div>
+                <div class="2-card-6 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>How do the teams work?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>We will have teams of three who work together as a group on one project. Everyone of all
+                            skill levels
+                            can join!</p>
+                    </div>
+                </div>
+                <div class="2-card-7 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>What if I don't have a team?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Don't worry! We'll have team formation events at the beginning of the weekend geared towards
+                            helping
+                            you find people to work with. </p>
+                    </div>
+                </div>
+                <div class="2-card-8 second-cards">
+                    <div class="card-heading">
+                        <p><svg class="card-paragraph-questionmark" fill="#000000" height="800px" width="800px"
+                                version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.536 29.536"
+                                xml:space="preserve">
+                                <g>
+                                    <path d="M14.768,0C6.611,0,0,6.609,0,14.768c0,8.155,6.611,14.767,14.768,14.767s14.768-6.612,14.768-14.767
+		C29.535,6.609,22.924,0,14.768,0z M14.768,27.126c-6.828,0-12.361-5.532-12.361-12.359c0-6.828,5.533-12.362,12.361-12.362
+		c6.826,0,12.359,5.535,12.359,12.362C27.127,21.594,21.594,27.126,14.768,27.126z" />
+                                    <path d="M14.385,19.337c-1.338,0-2.289,0.951-2.289,2.34c0,1.336,0.926,2.339,2.289,2.339c1.414,0,2.314-1.003,2.314-2.339
+		C16.672,20.288,15.771,19.337,14.385,19.337z" />
+                                    <path
+                                        d="M14.742,6.092c-1.824,0-3.34,0.513-4.293,1.053l0.875,2.804c0.668-0.462,1.697-0.772,2.545-0.772
+		c1.285,0.027,1.879,0.644,1.879,1.543c0,0.85-0.67,1.697-1.494,2.701c-1.156,1.364-1.594,2.701-1.516,4.012l0.025,0.669h3.42
+		v-0.463c-0.025-1.158,0.387-2.162,1.311-3.215c0.979-1.08,2.211-2.366,2.211-4.321C19.705,7.968,18.139,6.092,14.742,6.092z" />
+                                </g>
+                            </svg>I STILL HAVE QUESTIONS!</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Feel free to join our Discord server or email us for more questions or concerns. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="sponsors-bottom">
+        <svg class="sponsors-bottom-pattern" fill="white" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="fill-white">
+            </path>
+        </svg>
+        <div class="sponsors-contact-us">
+            <div class="sponsors-contact-us-heading">
+                <h2>Contact Us!</h2>
+            </div>
+            <div class="sponsors-contact-us-sub-heading">
+                <p>Email us about sponsorship inquiries at <a class=""
+                        href="mailto:sponsor@eric.x.hou@gmail.com">sponsor@hackx.com</a></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-left-container">
+                    <div class="footer-logo">
+                        <img src="/static/images/hackx-logo.png">
+                    </div>
+                    <div class="footer-socials">
+                        <ul role="list" class="list-2 left-list w-list-unstyled">
+                            <li style="list-style-type: none;">
+                                <a href="" target="_blank" class="w-inline-block">
+                                    <img src="https://assets-global.website-files.com/625c39b93541414104a1d654/625c8d419181da2418a66b2d_github.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" class="w-inline-block">
+                                    <img src="https://assets-global.website-files.com/625c39b93541414104a1d654/625c8d4290b5f0189929d637_discord.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" class="w-inline-block"><img
+                                        src="https://assets-global.website-files.com/625c39b93541414104a1d654/625c8d416d89770f92cd01e2_twitter.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="w-inline-block"><img
+                                        src="https://assets-global.website-files.com/625c39b93541414104a1d654/6294b5a90a9ffe8e79e52115_Group%2037323.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-register">
+                    <div class="footer-register-text">
+                        <h5>Register For the HackX Hackathon</h5>
+                    </div>
+                    <a class="footer-register-button button" target="_blank"
+                        href="https://formfaca.de/sm/O6lCKTaMO">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <div class="copyright">
+                    <h6>Copyright © 2021 HackX, a 501(c)(3) non-profit organization</h6>
+                </div>
+            </div>
+            <div class="footer-bottom-right">
+                <div class="footer-nav-container">
+                    <a href="" class="footer-nav">
+                        <h6 class="footer-link-title">Home</h6>
+                    </a>
+                    <a href="/#content-2" class="footer-nav">
+                        <h6 class="footer-link-title">Information</h6>
+                    </a>
+                    <a href="/#faq-heading" class="footer-nav">
+                        <h6 class="footer-link-title">FAQ</h6>
+                    </a>
+                    <a href="/#schedule-heading" class="footer-nav">
+                        <h6 class="footer-link-title">Schedule</h6>
+                    </a>
+                    <a href="/sponsors/" class="footer-nav">
+                        <h6 class="footer-link-title">Sponsors</h6>
+                    </a>
+                    <a href="/#about-heading" class="footer-nav">
+                        <h6 class="footer-link-title">Team</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var $satellite2 = $('.satellite2');
+        var $win = $(window);
+        $win.on('scroll', function () {
+            var top2 = $win.scrollTop() / 10;
+            $satellite2.css('transform', 'translate3d(' + top2 + 'px,-' + top2 + 'px,0px)');
+        }
+        );
+        var $telescope = $('.telescope');
+        var $win = $(window);
+        $win.on('scroll', function () {
+            var top3 = $win.scrollTop() / 10;
+            $telescope.css('transform', 'translate3d(-' + top3 + 'px,-' + top3 + 'px,0px)');
+        }
+        );
+        $(document).ready(function () {
+            $('.container ul.toggle').click(function () {
+                $(this).toggleClass('active');
+                $('.container .sidebar').toggleClass('active');
+            })
+        })
+        $(document).ready(function () {
+            $('.menu a').click(function () {
+                $('.container ul.toggle').toggleClass('active');
+                $('.container .sidebar').toggleClass('active');
+            })
+        })
+
+        var winScrollTop = 0;
+
+        $.fn.is_on_screen = function () {
+            var win = $(window);
+            var viewport = {
+                top: win.scrollTop(),
+                left: win.scrollLeft()
+            };
+            //viewport.right = viewport.left + win.width();
+            viewport.bottom = viewport.top + win.height();
+
+            var bounds = this.offset();
+            //bounds.right = bounds.left + this.outerWidth();
+            bounds.bottom = bounds.top + this.outerHeight();
+
+            return (!(viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+        };
+
+        function parallax() {
+            var scrolled = $(window).scrollTop();
+            $('.rocket').each(function () {
+
+                if ($(this).is_on_screen()) {
+                    var firstTop = $(this).offset().top;
+                    var $rocket = $(this).find(".rocket-image");
+                    var moveTop = (firstTop - winScrollTop) * 0.15 //speed;
+                    $rocket.css('transform', 'translate3d(-' + moveTop + 'px,-' + moveTop + 'px,0px)');
+                }
+
+            });
+            $('.saturn-sponsors').each(function () {
+
+                if ($(this).is_on_screen()) {
+                    var firstTop = $(this).offset().top;
+                    var $saturn = $(this).find(".saturn-sponsors-img");
+                    var moveTop = (firstTop - winScrollTop) * 0.20 //speed;
+                    $saturn.css('transform', 'translate3d(0px,' + moveTop + 'px, 0px)');
+                }
+
+            });
+        }
+
+        $(window).scroll(function (e) {
+            winScrollTop = $(this).scrollTop();
+            parallax();
+        });
+        console.log(`
+ o    o               8       o    o
+ 8    8               8       'b  d'
+o8oooo8 .oPYo. .oPYo. 8  .o    'bd'
+ 8    8 .oooo8 8    ' 8oP'     .PY.
+ 8    8 8    8 8    . 8 'b.   .P  Y.
+ 8    8 'YooP8 'YooP' 8  'o. .P    Y.
+`);
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $("#warningheader").show();
+    } else {
+        $("#warningheader").hide();
+    }
+    function hide() {
+        $("#warningheader").hide();
+    }
+    </script>
+</body>
+
+
+{% endblock content %}
