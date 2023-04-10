@@ -1486,20 +1486,6 @@ html {
     }
 }
 
-@media (max-width: 800px) {
-
-    .video-2,
-    .video-3,
-    .video-4,
-    .asteroid,
-    .planet-3,
-    .satellite,
-    .planet-2,
-    .telescope {
-        display: none;
-    }
-
-}
 
 @media (max-width: 950px) {
     .card-container {
@@ -4071,4 +4057,25 @@ tr:hover {
         top: 170rem;
 
     }
+}
+
+@media (max-width: 800px) {
+
+    .video-2,
+    .video-3,
+    .video-4,
+    .asteroid,
+    .planet-3,
+    .satellite,
+    .planet-2,
+    .telescope {
+        display: none;
+    }
+
+}
+@media (max-width: 800px) {
+    .main-video {
+        height: 120%;
+    }
+
 }
