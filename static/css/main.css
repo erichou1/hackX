@@ -474,6 +474,13 @@ html {
     border-width: 1px;
     box-shadow: 6.22085px 6.22085px 0px #bababa;
 }
+.cards:hover .prize-image-1 {
+    transform: translate(0,0) rotate(0) skewX(0) skewY(0) scaleX(1.07) scaleY(1.07);
+}
+.prize-image-1 {
+    
+    transition-duration: .3s;
+}
 
 .card-paragraph {
     margin-bottom: 0px;
@@ -1561,7 +1568,8 @@ html {
     .card-container {
         grid-template-columns: 1fr !important;
         -ms-grid-columns: 1fr !important;
-
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .card-container-2 {
@@ -1584,10 +1592,7 @@ html {
         width: 8rem;
     }
 
-    .saturn {
-        top: 195% !important;
-        left: 50% !important;
-    }
+    
 
 }
 
@@ -2236,34 +2241,6 @@ html {
     }
     .saturn {
         top: 90rem !important;
-
-    }
-}
-@media (max-width: 665px) {
-
-    .saturn {
-        top: 95rem !important;
-
-    }
-}
-@media (max-width: 600px) {
-
-    .saturn {
-        top: 90rem !important;
-
-    }
-}
-@media (max-width: 550px) {
-
-    .saturn {
-        top: 87rem !important;
-
-    }
-}
-@media (max-width: 470px) {
-
-    .saturn {
-        display: none;
 
     }
 }
@@ -3372,7 +3349,10 @@ tr:hover {
 }
 
 @media (max-width: 700px) {
-
+    .saturn {
+        top: 84rem !important;
+        left: 50% !important;
+    }
     .cell100,
     th {
         font-size: 1rem !important;
@@ -4076,6 +4056,100 @@ tr:hover {
 @media (max-width: 800px) {
     .main-video {
         height: 120%;
+    }
+
+}
+.card-paragraph-heading p{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0px 0.2px, 0.2px 0px, 0.2px 0.2px;
+    text-align: center;
+}
+.card-paragraph-heading {
+    margin-top: 1rem;
+    text-align: center;
+}
+.prize-image-1 img{
+    border-radius: 1rem;
+    background-color: white;
+}
+.prize-image-1 img{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+    
+    
+}
+.prize-image-1 {
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+    
+}
+@media (max-width: 643px) {
+
+    .saturn {
+        top: 85rem !important;
+
+    }
+}
+@media (max-width: 621px) {
+
+    .saturn {
+        top: 87rem !important;
+
+    }
+}
+@media (max-width: 600px) {
+
+    .saturn {
+        top: 80rem !important;
+
+    }
+}
+@media (max-width: 581px) {
+
+    .saturn {
+        top: 79rem !important;
+
+    }
+}
+@media (max-width: 550px) {
+
+    .saturn {
+        top: 75rem !important;
+
+    }
+}
+@media (max-width: 530px) {
+
+    .saturn {
+        top: 73rem !important;
+
+    }
+}
+
+@media (max-width: 480px) {
+
+    .saturn {
+        top: 71rem !important;
+
+    }
+}
+@media (max-width: 470px) {
+
+    .saturn {
+        display: none;
+
+    }
+    .card-container {
+
+        padding-left: 5%;
+        padding-right: 0%;
     }
 
 }
