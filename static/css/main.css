@@ -435,7 +435,7 @@ html {
     grid-row-start: span 1;
     grid-row-end: span 1;
     margin-left: 6%;
-    padding-bottom: 7.5%;
+    padding-bottom: 1%;
 }
 
 .cards {
@@ -1500,7 +1500,10 @@ html {
         -ms-grid-columns: 1fr 1fr !important;
         grid-column-gap: 32px;
         grid-row-gap: 40px;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
+    }
+    .prizes-footer {
+        padding-bottom: 5% !important;
     }
 
     .saturn {
@@ -2069,7 +2072,11 @@ html {
     .speakers-heading h2 {
         font-size: 10vw !important;
     }
-
+    .prizes-footer {
+        font-size: 8vw !important;
+        padding-bottom: 10% !important;
+    }
+    
     .slide-img img {
         transform: translateX(-18%);
     }
@@ -4152,4 +4159,10 @@ tr:hover {
         padding-right: 0%;
     }
 
+}
+.prizes-footer {
+    font-size: 2.8rem;
+    text-align: center;
+    color: white;
+    padding-bottom: 7.5%;
 }
