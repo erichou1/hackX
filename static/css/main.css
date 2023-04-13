@@ -2584,6 +2584,8 @@ html {
     object-fit: cover;
     min-width: 100px;
     min-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 .team-border-2:after {
@@ -2825,7 +2827,7 @@ html {
 
 }
 
-@media (max-width: 600px) {}
+
 
 @media (min-width: 994px) {
     .toggle {
@@ -4114,7 +4116,7 @@ tr:hover {
 @media (max-width: 600px) {
 
     .saturn {
-        top: 80rem !important;
+        top: 82rem !important;
 
     }
 }
