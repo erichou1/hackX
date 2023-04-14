@@ -3,6 +3,10 @@
 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 img:not(.lghs-banner-image) {
     pointer-events: none;
     user-select: none;
@@ -12,7 +16,6 @@ img:not(.lghs-banner-image) {
     -o-user-select: none;
 }
 
-*::selection {}
 
 html {
     scroll-behavior: smooth;
@@ -45,7 +48,8 @@ html {
 }
 
 .navbar-brand img {
-    width: 150px;
+    width: 130px;
+    height: 130px
 }
 
 .navbar-brand {
@@ -100,12 +104,9 @@ html {
     font-size: var(--h4-size, 2.5rem) !important;
     padding-top: 0 !important;
     position: absolute;
-    margin-top: 0.75%;
+    margin-top: 2%;
 }
 
-.navbar-brand img {
-    height: 34px;
-}
 
 .container {
     margin: auto;
@@ -122,8 +123,6 @@ html {
     padding-top: 1%;
     padding-right: 13%;
 }
-
-.social-icons-navbar {}
 
 .navbar-right-discord {
     top: 37%;
@@ -197,7 +196,7 @@ html {
     position: relative;
     margin: auto;
     width: 100%;
-    height: 100%;
+    height: 120%;
     top: 0%;
 
     object-fit: cover;
@@ -227,7 +226,10 @@ html {
     line-height: 110%;
     font-weight: 600;
     text-align: center;
+    padding-right: 20%;
+    padding-left: 20%;
 }
+
 
 .sub-heading {
     margin-top: 0px;
@@ -282,7 +284,7 @@ html {
 
 #header {
     position: relative;
-    margin-top: 12rem;
+    margin-top: 8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -422,6 +424,7 @@ html {
 }
 
 .card-container {
+
     position: relative;
 
     grid-column-gap: 16px;
@@ -461,7 +464,7 @@ html {
 }
 
 .card-container {
-    margin-top: 2%;
+    margin-top: 5rem;
 }
 
 .cards:hover {
@@ -474,11 +477,13 @@ html {
     border-width: 1px;
     box-shadow: 6.22085px 6.22085px 0px #bababa;
 }
+
 .cards:hover .prize-image-1 {
-    transform: translate(0,0) rotate(0) skewX(0) skewY(0) scaleX(1.07) scaleY(1.07);
+    transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.07) scaleY(1.07);
 }
+
 .prize-image-1 {
-    
+
     transition-duration: .3s;
 }
 
@@ -537,7 +542,7 @@ html {
 
 .faq-heading {
     text-align: center;
-    margin-top: 6%;
+    margin-top: 48rem;
     padding-top: 2%;
     padding-bottom: 2rem;
 }
@@ -1160,14 +1165,11 @@ html {
     position: absolute;
 }
 
-.slide-img {}
 
 .cs_bullets img {
     display: none;
 
 }
-
-.slide-img {}
 
 .csslider1 {
     text-align: center;
@@ -1321,7 +1323,7 @@ html {
 .planet-3 {
     position: absolute;
     right: 0%;
-    top: 190rem;
+    top: 183rem;
     z-index: 0;
 }
 
@@ -1339,7 +1341,7 @@ html {
 
 @media (max-width: 1400px) {
     .planet-3 {
-        top: 185rem;
+        top: 180rem;
     }
 
     .cards {
@@ -1360,9 +1362,8 @@ html {
     }
 
     .rocket {
-        top: 100rem !important;
+        top: 98rem !important;
     }
-
 }
 
 @media (max-width: 992px) {
@@ -1372,8 +1373,13 @@ html {
     }
 
     .navbar-brand {
-        padding-top: 0% !important;
+        padding-top: 1.25% !important;
         left: 10%;
+    }
+
+    .navbar-brand img {
+        width: 110px;
+        height: 110px;
     }
 
     .navbar-right-slack {
@@ -1455,10 +1461,6 @@ html {
         margin-top: 15% !important;
     }
 
-    #header {
-        margin-top: 5% !important;
-    }
-
     .content-2-heading {
         font-size: 3rem;
         margin-bottom: 0.25rem;
@@ -1502,6 +1504,7 @@ html {
         grid-row-gap: 40px;
         padding-bottom: 5%;
     }
+
     .prizes-footer {
         padding-bottom: 5% !important;
     }
@@ -1550,7 +1553,7 @@ html {
     }
 
     .rocket {
-        top: 120rem !important;
+        top: 117rem !important;
 
     }
 
@@ -1562,7 +1565,6 @@ html {
 @media (max-width: 950px) {
     .rocket {
         left: 77.5% !important;
-        top: 160.5rem;
     }
 }
 
@@ -1595,7 +1597,7 @@ html {
         width: 8rem;
     }
 
-    
+
 
 }
 
@@ -1646,9 +1648,6 @@ html {
         height: 51rem !important;
     }
 
-    .navbar-brand {
-        margin-top: 0%;
-    }
 }
 
 @media (max-width: 590px) {
@@ -1686,7 +1685,7 @@ html {
 
 @media (max-width: 1265px) {
     .main-video video {
-        height: 110%;
+        height: 80%;
     }
 
     .content-2 {
@@ -1695,15 +1694,16 @@ html {
 
     .main-video {
         width: 100%;
-        height: 100%;
+        height: 170%;
 
     }
 
     .content-2 {
-        margin-top: 18rem;
+        margin-top: 8rem;
     }
+
     .planet-3 {
-        top: 195rem;
+        top: 180rem;
     }
 }
 
@@ -1723,7 +1723,7 @@ html {
     }
 
     .planet-3 {
-        top: 198rem;
+        top: 180rem;
     }
 
     .planet-2 img {
@@ -1741,14 +1741,14 @@ html {
 
 @media (max-width: 1060px) {
     .planet-3 {
-        top: 200rem;
+        top: 185rem;
     }
 
 }
 
 @media (max-width: 1048px) {
     .planet-3 {
-        top: 202rem;
+        top: 190rem;
     }
 
 }
@@ -1773,8 +1773,6 @@ html {
     width: 100%;
 
 }
-
-.slide-img {}
 
 
 @media (max-width: 580px) {
@@ -1870,7 +1868,7 @@ html {
         transform: translateX(-35%);
         position: relative;
     }
-    
+
     .speakers {
         height: 45rem !important;
     }
@@ -1964,7 +1962,7 @@ html {
     }
 
     #header {
-        margin-top: 15%;
+        margin-top: 8%;
     }
 }
 
@@ -1977,8 +1975,8 @@ html {
 }
 
 @media (max-width: 1000px) {
-    .faq-heading {
-        margin-top: 6%;
+    .main-video video {
+        height: 60%;
     }
 
     .sponsors-heading {
@@ -2017,7 +2015,7 @@ html {
         background-position: 10% 100% !important;
         margin: auto;
         width: 100% !important;
-        height: 85% !important;
+        height: 60% !important;
         object-fit: cover;
         z-index: -100;
     }
@@ -2036,7 +2034,7 @@ html {
     }
 
     #header {
-        margin-top: 8%;
+        margin-top: 4%;
     }
 
     .planet-3 {
@@ -2063,6 +2061,12 @@ html {
         display: none;
     }
 
+    .faq-heading {
+        margin-top: 5rem !important;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
     .nav-item {
         opacity: 0;
     }
@@ -2072,11 +2076,12 @@ html {
     .speakers-heading h2 {
         font-size: 10vw !important;
     }
+
     .prizes-footer {
         font-size: 8vw !important;
         padding-bottom: 10% !important;
     }
-    
+
     .slide-img img {
         transform: translateX(-18%);
     }
@@ -2246,11 +2251,23 @@ html {
     .speakers {
         height: 50rem !important;
     }
+
+    #header {
+        margin-top: 10%;
+    }
+
     .saturn {
         top: 90rem !important;
 
     }
+
+    .main-heading {
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+    }
 }
+
 @media (max-width: 880px) {
     .rocket {
         top: 135rem !important;
@@ -2275,11 +2292,14 @@ html {
     }
 }
 
-@media (max-width: 780px) {}
-
 @media (max-width: 700px) {
     .cs_bullets {
         top: 5% !important;
+    }
+
+    .main-heading {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
 
     .sponsors-heading h2 {
@@ -2289,7 +2309,7 @@ html {
 
 @media (max-width: 770px) {
     .rocket {
-        top: 145rem !important;
+        top: 136rem !important;
         pointer-events: none;
     }
 
@@ -2369,6 +2389,11 @@ html {
         font-size: 12vw !important;
     }
 
+    .main-heading {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     .cs_bullets {
         top: -1% !important;
     }
@@ -2420,7 +2445,7 @@ html {
     align-items: center;
     text-align: center;
     padding-left: 10vw;
-    
+
     left: 50%;
     transform: translateX(-50%);
     grid-column-gap: 5px;
@@ -2428,6 +2453,7 @@ html {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     display: grid;
+
     grid-auto-columns: 1fr;
     grid-template-rows: auto auto;
     grid-column-start: span 1;
@@ -2445,8 +2471,8 @@ html {
     padding: 0.3rem;
     box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
 }
-.accordian-link
-.accordian-link:hover {
+
+.accordian-link .accordian-link:hover {
     color: #f4bc73;
 
 }
@@ -2926,19 +2952,19 @@ html {
     }
 
     .accourdian {
-        
-        width: 50%;
+        padding-left: 25%;
+        padding-right: 25%;
         grid-template-columns: 1fr;
         -ms-grid-columns: 1fr;
-    }
-    .accordian-card {
-        
     }
 
 }
 
-@media (max-width: 510px) {
+.accordian-card {
+    width: 95%;
+}
 
+@media (max-width: 510px) {
     .accordian-sub-heading {
         font-size: 8vw;
     }
@@ -2946,6 +2972,7 @@ html {
     .accordian-link {
         width: 23rem;
     }
+
 }
 
 @media (max-width: 450px) {
@@ -2967,6 +2994,10 @@ html {
         padding-right: 1rem;
     }
 
+    .column1 {
+        padding-left: 20px !important;
+    }
+
     .team-image img {
         min-width: 70px;
         min-height: 70px;
@@ -2977,6 +3008,7 @@ html {
         min-height: 70px;
     }
 }
+
 
 @media (max-width: 500px) {
 
@@ -3034,6 +3066,14 @@ html {
 }
 
 @media (max-width: 550px) {
+    .main-heading {
+
+        font-size: 300%;
+    }
+
+    .sub-heading {
+        font-size: 200%;
+    }
 
     #arrowsvg {
         transform: scale(1, 0.9) !important;
@@ -3058,6 +3098,14 @@ html {
 }
 
 @media (max-width: 400px) {
+    .main-heading {
+
+        font-size: 250%;
+    }
+
+    .sub-heading {
+        font-size: 150%;
+    }
 
     #arrowsvg {
         transform: scale(1, 0.6) !important;
@@ -3093,7 +3141,8 @@ html {
     }
 
     .saturn {
-        top: 45rem;
+        top: 66rem;
+        left: 15%;
     }
 }
 
@@ -3142,6 +3191,7 @@ pre {
     cursor: auto;
     color: gray;
     font-size: 2rem;
+    margin-top: 0.15rem;
     margin-right: 2%;
     user-select: none;
     -moz-user-select: none;
@@ -3152,11 +3202,16 @@ pre {
     transition-duration: 0.1s;
 }
 
+.leftarrow svg {
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
 .rightarrow {
     cursor: pointer;
     color: gainsboro;
-    font-size: 2rem;
     margin-left: 2%;
+    margin-top: 0.5rem;
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;
@@ -3164,6 +3219,11 @@ pre {
     -o-user-select: none;
     z-index: 100;
     transition-duration: 0.1s;
+}
+
+.rightarrow svg {
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 div.table100 {
@@ -3306,6 +3366,8 @@ tr:hover {
 
 .schedule-top {
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 1030px) {
@@ -3359,9 +3421,10 @@ tr:hover {
 
 @media (max-width: 700px) {
     .saturn {
-        top: 84rem !important;
+        top: 76rem !important;
         left: 50% !important;
     }
+
     .cell100,
     th {
         font-size: 1rem !important;
@@ -3384,11 +3447,6 @@ tr:hover {
 @media (max-width: 500px) {
     table {
         min-width: 200px !important;
-    }
-
-    .cell100,
-    th {
-        font-size: 0.8rem !important;
     }
 }
 
@@ -3427,7 +3485,7 @@ tr:hover {
 }
 
 .schedule-heading {
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-bottom: 1rem;
 }
 
@@ -3478,12 +3536,18 @@ tr:hover {
 }
 
 .footer-logo img {
-    width: 250px;
+    width: 100px;
     margin-bottom: 30px;
+
+}
+
+.footer-logo {
+    justify-content: center;
+    display: flex;
 }
 
 .list-2.left-list {
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .list-2 {
@@ -3496,7 +3560,6 @@ tr:hover {
     align-items: flex-end;
     grid-column-gap: 16px;
     grid-row-gap: 0px;
-    padding-left: 2rem;
 }
 
 .list-2 li {
@@ -3661,13 +3724,14 @@ tr:hover {
 @media (max-width: 470px) {
     .navbar-brand {
         left: 7.5%;
+        margin-top: 5%;
     }
 }
 
 @media (max-width: 400px) {
     .navbar-brand {
         left: 5%;
-        margin-top: 3%;
+        margin-top: 7%;
     }
 }
 
@@ -3846,8 +3910,14 @@ tr:hover {
     .slide-img img {
         left: 10% !important;
     }
+
     .video-3 {
         display: none;
+    }
+
+    .saturn {
+        left: 60%;
+        top: 42rem;
     }
 }
 
@@ -3996,6 +4066,7 @@ tr:hover {
 
 
 }
+
 @media (max-width: 890px) {
     .planet-3 {
         top: 210rem !important;
@@ -4009,6 +4080,7 @@ tr:hover {
     }
 
 }
+
 @media (max-width: 980px) {
 
     .asteroid {
@@ -4016,16 +4088,19 @@ tr:hover {
 
     }
 }
+
 @media (max-width: 950px) {
 
     .asteroid {
         top: 170rem;
 
     }
+
     .video-3 {
         display: block;
     }
 }
+
 @media (max-width: 900px) {
 
     .asteroid {
@@ -4033,6 +4108,7 @@ tr:hover {
 
     }
 }
+
 @media (max-width: 890px) {
 
     .asteroid {
@@ -4040,6 +4116,7 @@ tr:hover {
 
     }
 }
+
 @media (max-width: 840px) {
 
     .asteroid {
@@ -4062,71 +4139,107 @@ tr:hover {
     }
 
 }
+
 @media (max-width: 800px) {
     .main-video {
-        height: 120%;
+        height: 170% !important;
     }
 
 }
-.card-paragraph-heading p{
+
+@media (max-width: 500px) {
+    .main-video {
+        height: 160% !important;
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+    .main-video {
+        height: 165% !important;
+    }
+
+    .main-video video {
+        height: 50% !important;
+    }
+
+}
+
+.card-paragraph-heading p {
     font-size: 1.2rem;
     color: white;
     font-weight: 900;
     text-shadow: 0px 0.2px, 0.2px 0px, 0.2px 0.2px;
     text-align: center;
 }
+
 .card-paragraph-heading {
     margin-top: 1rem;
     text-align: center;
 }
-.prize-image-1 img{
+
+.prize-image-1 img {
     border-radius: 1rem;
     background-color: white;
 }
-.prize-image-1 img{
+
+.prize-image-1 img {
     width: 10rem;
     height: 10rem;
     display: flex;
     justify-content: center;
     overflow: hidden;
     margin: auto;
-    
-    
+
+
 }
+
 .prize-image-1 {
     padding: 0.5rem;
     padding-bottom: 1rem;
     overflow: hidden;
-    
+
 }
+
 @media (max-width: 643px) {
-
-    .saturn {
-        top: 85rem !important;
-
+    .faq-heading {
+        margin-top: 5rem !important;
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
     }
-}
-@media (max-width: 621px) {
-
-    .saturn {
-        top: 87rem !important;
-
-    }
-}
-@media (max-width: 600px) {
-
-    .saturn {
-        top: 82rem !important;
-
-    }
-}
-@media (max-width: 581px) {
 
     .saturn {
         top: 79rem !important;
 
     }
 }
+
+@media (max-width: 621px) {
+
+    .saturn {
+        top: 82rem !important;
+
+    }
+}
+
+@media (max-width: 600px) {
+
+    .saturn {
+        top: 75rem !important;
+
+    }
+}
+
+@media (max-width: 581px) {
+
+    .saturn {
+        top: 75rem !important;
+
+    }
+}
+
 @media (max-width: 550px) {
 
     .saturn {
@@ -4134,6 +4247,7 @@ tr:hover {
 
     }
 }
+
 @media (max-width: 530px) {
 
     .saturn {
@@ -4149,12 +4263,14 @@ tr:hover {
 
     }
 }
+
 @media (max-width: 470px) {
 
     .saturn {
         display: none;
 
     }
+
     .card-container {
 
         padding-left: 5%;
@@ -4162,9 +4278,30 @@ tr:hover {
     }
 
 }
+
 .prizes-footer {
     font-size: 2.8rem;
     text-align: center;
     color: white;
     padding-bottom: 7.5%;
+}
+
+@media (max-width: 700px) {
+
+    .cell100,
+    th {
+        font-size: 2.5vw !important;
+    }
+}
+
+@media (max-width: 700px) {}
+
+@media (max-width: 450px) {
+    #day {
+        font-size: 8vw;
+    }
+
+    .rightarrow {
+        margin-top: 0.15rem;
+    }
 }
