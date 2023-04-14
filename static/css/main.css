@@ -2553,7 +2553,7 @@ html {
 .about-heading h2 {
     display: block;
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-family: "Katahdin Round", sans-serif;
     color: #fff;
     font-size: 3rem;
@@ -2577,7 +2577,7 @@ html {
 
 }
 
-.team-container {
+.director-container, .sponsorship-team-container, .tech-team-container, .outreach-team-container {
     left: 50%;
     transform: translateX(-50%);
     position: relative;
@@ -2595,7 +2595,6 @@ html {
     -ms-flex-line-pack: center;
     align-content: center;
     grid-column-gap: 2px;
-    grid-row-gap: 24px;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto auto;
@@ -2603,9 +2602,11 @@ html {
     display: grid;
 
 }
+.director-container {
+    margin-top: 5px !important;
+}
 
-.team-container p,
-.team-conainer h2 {
+.gellix p, .gellix h2 {
     font-family: "Gellix", sans-serif;
 }
 
@@ -3030,6 +3031,7 @@ html {
 .team-card {
     max-width: 10vw;
     min-width: 15vw;
+    max-height: 25vw;
     transition: transform 0.3s ease-out;
 }
 
@@ -3722,7 +3724,13 @@ tr:hover {
         left: auto;
         right: auto;
     }
-
+    .footer-logo {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .list-2.left-list {
+       justify-content: flex-start; 
+    }
     .footer-right {
         width: 100%;
         left: auto;
@@ -4318,4 +4326,35 @@ tr:hover {
     .rightarrow {
         margin-top: 0.15rem;
     }
+}
+.director-heading {
+    color: white;
+    font-family: "Gellix", sans-serif;
+    font-weight: 100;
+    display: block;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.about-sub-heading {
+    color: white;
+    font-family: "Gellix", sans-serif;
+    font-weight: 100;
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+.twofr {
+    -ms-grid-columns: 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr !important;
+}
+.threefr {
+    -ms-grid-columns: 1fr 1fr 1fr !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+}
+.onefr {
+    -ms-grid-columns: 1fr !important;
+    grid-template-columns: 1fr !important;
 }

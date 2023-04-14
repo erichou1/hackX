@@ -1723,7 +1723,13 @@ html {
         left: auto;
         right: auto;
     }
-
+    .footer-logo {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    .list-2.left-list {
+       justify-content: flex-start; 
+    }
     .footer-right {
         width: 100%;
         left: auto;
