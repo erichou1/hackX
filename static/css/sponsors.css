@@ -168,12 +168,12 @@ html {
     opacity: 1;
 }
 
-.navbar-right-slack {
+.navbar-right-email {
     position: absolute;
     width: 18px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
-    top: 40%;
-    margin-left: 6.7%;
+    top: 30%;
+    margin-left: 6.1%;
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -183,7 +183,10 @@ html {
     transition-property: opacity;
 }
 
-.navbar-right-slack:hover {
+.navbar-right-email img {
+    width: 2.4rem;
+}
+.navbar-right-email:hover {
     opacity: 1;
 }
 
@@ -421,7 +424,7 @@ html {
 
 
 
-    .navbar-right-slack {
+    .navbar-right-email {
         margin-left: 10%;
     }
 
@@ -442,7 +445,7 @@ html {
 }
 
 @media (max-width: 645px) {
-    .navbar-right-slack {
+    .navbar-right-email {
         margin-left: 15%;
     }
 
@@ -705,7 +708,7 @@ html {
 
     .navbar-right-discord,
     .navbar-right-devpost,
-    .navbar-right-slack {
+    .navbar-right-email {
         display: none;
     }
 }
@@ -851,7 +854,7 @@ html {
 
 .social-icon-discord,
 .social-icon-devpost,
-.social-icon-slack {
+.social-icon-email {
     padding: 4px;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -884,7 +887,7 @@ html {
     margin-top: 5rem;
 }
 
-.social-icon-slack {
+.social-icon-email {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -926,7 +929,7 @@ html {
         height: 110px;
     }
 
-    .navbar-right-slack {
+    .navbar-right-email {
         margin-left: 10%;
     }
 
@@ -940,7 +943,7 @@ html {
 }
 
 @media (max-width: 645px) {
-    .navbar-right-slack {
+    .navbar-right-email {
         margin-left: 15%;
     }
 
@@ -987,7 +990,7 @@ html {
 
     .navbar-right-discord,
     .navbar-right-devpost,
-    .navbar-right-slack {
+    .navbar-right-email {
         display: none;
     }
 
@@ -996,7 +999,7 @@ html {
 @media (max-width: 993px) {
 
     .navbar-right-discord,
-    .navbar-right-slack,
+    .navbar-right-email,
     .navbar-right-devpost {
         display: none;
     }
@@ -1168,7 +1171,16 @@ html {
     text-shadow: 0px 0.35px, 0.35px 0px, 0.35px 0.35px;
 
 }
-
+.social-icon-email img {
+    width: 2.75rem;
+    height: 2.75rem;
+}
+.social-icon {
+    margin-top: 5rem;
+}
+.social-icon-devpost {
+    margin-right: 0;
+}
 .mission-statement-paragraph-container {
     display: flex;
     justify-content: center;
