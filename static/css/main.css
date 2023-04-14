@@ -3546,6 +3546,11 @@ tr:hover {
     display: flex;
 }
 
+.footer-logo {
+    justify-content: center;
+    display: flex;
+}
+
 .list-2.left-list {
     justify-content: center;
 }
