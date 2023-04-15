@@ -2260,7 +2260,12 @@ html {
     .speakers {
         height: 50rem !important;
     }
-
+    .director-heading {
+        font-size: 2rem !important;
+    }
+    .about-sub-heading {
+        font-size: 1.5rem !important;
+    }
     #header {
         margin-top: 10%;
     }
@@ -2594,7 +2599,7 @@ html {
     -webkit-align-content: center;
     -ms-flex-line-pack: center;
     align-content: center;
-    grid-column-gap: 2px;
+    grid-column-gap: 5px;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     -ms-grid-rows: auto auto;
@@ -2658,7 +2663,7 @@ html {
 .team-name {
     margin-top: 12px;
     color: #fff;
-    font-size: 1.2rem !important;
+    font-size: 1.2rem!important;
     line-height: 32px;
     text-align: center;
     position: relative;
@@ -2666,6 +2671,8 @@ html {
     white-space: nowrap;
     overflow: hidden;
     width: 100%;
+    font-family: "Gellix", sans-serif;
+
 
 }
 
@@ -2795,6 +2802,8 @@ html {
     line-height: 32px;
     text-align: center;
     white-space: nowrap;
+    font-family: "Gellix", sans-serif;
+
 
 }
 
@@ -2927,7 +2936,9 @@ html {
         width: 30vw;
         height: 30vw;
     }
-
+    .large-team-position p {
+        font-size: 2.25vw !important;
+    }
     #header {
         margin-top: 15% !important;
 
@@ -4112,7 +4123,9 @@ tr:hover {
 }
 
 @media (max-width: 950px) {
-
+    .large-team-position p {
+        font-size: 1.8vw;
+    }
     .asteroid {
         top: 170rem;
 
