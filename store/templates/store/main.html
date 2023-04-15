@@ -1542,29 +1542,29 @@
             document.getElementById("schedSun").style.display = "block";
         }
     }
-        $(document).ready(function () {
-            
-            let overflows = document.querySelectorAll(".overflow");
-        for(let i = 0;i<overflows.length;i++){
+    $(document).ready(function () {
+
+        let overflows = document.querySelectorAll(".overflow");
+        for (let i = 0; i < overflows.length; i++) {
             let overflow = overflows[i]
             if (overflow.scrollWidth > overflow.offsetWidth) {
 
-                overflow.textContent = overflow.textContent.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } )[0] +' '+ overflow.textContent.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } )[1][0] + '.'
+                overflow.textContent = overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[0] + ' ' + overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[1][0] + '.'
             }
-            
+
         }
 
     })
     $(window).resize(function () {
         let overflows = document.querySelectorAll(".overflow");
-        for(let i = 0;i<overflows.length;i++){
+        for (let i = 0; i < overflows.length; i++) {
             let overflow = overflows[i]
             if (overflow.scrollWidth > overflow.offsetWidth) {
-                overflow.textContent = overflow.textContent.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } )[0] +' '+ overflow.textContent.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } )[1][0] + '.'
+                overflow.textContent = overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[0] + ' ' + overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[1][0] + '.'
             }
         }
     });
-    
+
     console.log(`
  o    o               8       o    o
  8    8               8       'b  d'

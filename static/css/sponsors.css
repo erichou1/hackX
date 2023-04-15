@@ -186,6 +186,7 @@ html {
 .navbar-right-email img {
     width: 2.4rem;
 }
+
 .navbar-right-email:hover {
     opacity: 1;
 }
@@ -1171,16 +1172,20 @@ html {
     text-shadow: 0px 0.35px, 0.35px 0px, 0.35px 0.35px;
 
 }
+
 .social-icon-email img {
     width: 2.75rem;
     height: 2.75rem;
 }
+
 .social-icon {
     margin-top: 5rem;
 }
+
 .social-icon-devpost {
     margin-right: 0;
 }
+
 .mission-statement-paragraph-container {
     display: flex;
     justify-content: center;
@@ -1374,7 +1379,7 @@ html {
 }
 
 .prospectus-logo img {
-    
+
     width: 10rem;
     height: 6.8rem;
     margin-left: 1.5rem;
@@ -1556,6 +1561,7 @@ html {
     width: 100px;
     margin-bottom: 30px;
 }
+
 .footer-logo {
     justify-content: center;
     display: flex;
@@ -1723,13 +1729,16 @@ html {
         left: auto;
         right: auto;
     }
+
     .footer-logo {
         justify-content: flex-start;
         padding-left: 1rem;
     }
+
     .list-2.left-list {
-       justify-content: flex-start; 
+        justify-content: flex-start;
     }
+
     .footer-right {
         width: 100%;
         left: auto;

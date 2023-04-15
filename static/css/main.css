@@ -169,7 +169,7 @@ html {
     width: 18px;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
     top: 30%;
-    margin-left: 6.1%;
+    margin-left: 6%;
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -177,8 +177,9 @@ html {
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: opacity;
-    
+
 }
+
 .navbar-right-email img {
     width: 2.4rem;
 }
@@ -2222,16 +2223,20 @@ html {
     width: 1.5rem;
     height: 1.5rem;
 }
+
 .social-icon-email img {
     width: 2.75rem;
     height: 2.75rem;
 }
+
 .social-icon {
     margin-top: 5rem;
 }
+
 .social-icon-devpost {
     margin-right: 0;
 }
+
 .menu {
     margin-top: 5rem;
 }
@@ -2260,12 +2265,15 @@ html {
     .speakers {
         height: 50rem !important;
     }
+
     .director-heading {
         font-size: 2rem !important;
     }
+
     .about-sub-heading {
         font-size: 1.5rem !important;
     }
+
     #header {
         margin-top: 10%;
     }
@@ -2582,7 +2590,10 @@ html {
 
 }
 
-.director-container, .sponsorship-team-container, .tech-team-container, .outreach-team-container {
+.director-container,
+.sponsorship-team-container,
+.tech-team-container,
+.outreach-team-container {
     left: 50%;
     transform: translateX(-50%);
     position: relative;
@@ -2607,11 +2618,13 @@ html {
     display: grid;
 
 }
+
 .director-container {
     margin-top: 5px !important;
 }
 
-.gellix p, .gellix h2 {
+.gellix p,
+.gellix h2 {
     font-family: "Gellix", sans-serif;
 }
 
@@ -2663,7 +2676,7 @@ html {
 .team-name {
     margin-top: 12px;
     color: #fff;
-    font-size: 1.2rem!important;
+    font-size: 1.2rem !important;
     line-height: 32px;
     text-align: center;
     position: relative;
@@ -2936,9 +2949,11 @@ html {
         width: 30vw;
         height: 30vw;
     }
+
     .large-team-position p {
         font-size: 2.25vw !important;
     }
+
     #header {
         margin-top: 15% !important;
 
@@ -3735,13 +3750,16 @@ tr:hover {
         left: auto;
         right: auto;
     }
+
     .footer-logo {
         justify-content: flex-start;
         padding-left: 1rem;
     }
+
     .list-2.left-list {
-       justify-content: flex-start; 
+        justify-content: flex-start;
     }
+
     .footer-right {
         width: 100%;
         left: auto;
@@ -4126,6 +4144,7 @@ tr:hover {
     .large-team-position p {
         font-size: 1.8vw;
     }
+
     .asteroid {
         top: 170rem;
 
@@ -4340,6 +4359,7 @@ tr:hover {
         margin-top: 0.15rem;
     }
 }
+
 .director-heading {
     color: white;
     font-family: "Gellix", sans-serif;
@@ -4349,6 +4369,7 @@ tr:hover {
     text-align: center;
     margin-bottom: 24px;
 }
+
 .about-sub-heading {
     color: white;
     font-family: "Gellix", sans-serif;
@@ -4359,14 +4380,17 @@ tr:hover {
     margin-bottom: 10px;
     margin-top: 40px;
 }
+
 .twofr {
     -ms-grid-columns: 1fr 1fr !important;
     grid-template-columns: 1fr 1fr !important;
 }
+
 .threefr {
     -ms-grid-columns: 1fr 1fr 1fr !important;
     grid-template-columns: 1fr 1fr 1fr !important;
 }
+
 .onefr {
     -ms-grid-columns: 1fr !important;
     grid-template-columns: 1fr !important;
