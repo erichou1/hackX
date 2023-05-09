@@ -2380,7 +2380,7 @@ html {
 
 @media (max-width: 450px) {
     .speakers {
-        height: 51rem !important;
+        height: 49rem !important;
     }
 }
 
@@ -4400,4 +4400,5 @@ tr:hover {
 .onefr {
     -ms-grid-columns: 1fr !important;
     grid-template-columns: 1fr !important;
+}
 }
