@@ -2359,7 +2359,7 @@ html {
     }
 
     .slide-img img {
-        top: 10% !important;
+        top: 15% !important;
     }
 
     .slider-heading {
@@ -2380,7 +2380,7 @@ html {
 
 @media (max-width: 450px) {
     .speakers {
-        height: 49rem !important;
+        height: 51rem !important;
     }
 }
 
@@ -4351,12 +4351,8 @@ tr:hover {
 
     .cell100,
     th {
-        font-size: 3vw !important;
+        font-size: 2.5vw !important;
     }
-    .column2 {
-        padding-right:0;
-    }
-}
 
 @media (max-width: 700px) {}
 
