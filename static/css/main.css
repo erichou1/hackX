@@ -2359,7 +2359,7 @@ html {
     }
 
     .slide-img img {
-        top: 15% !important;
+        top: 10% !important;
     }
 
     .slider-heading {
@@ -4353,7 +4353,7 @@ tr:hover {
     th {
         font-size: 2.5vw !important;
     }
-}
+
 @media (max-width: 700px) {}
 
 @media (max-width: 450px) {
