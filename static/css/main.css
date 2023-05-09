@@ -4351,7 +4351,10 @@ tr:hover {
 
     .cell100,
     th {
-        font-size: 2.5vw !important;
+        font-size: 3vw !important;
+    }
+    .column2 {
+        padding-right:0;
     }
 }
 
