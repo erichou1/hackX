@@ -2034,3 +2034,19 @@ html {
     }
 
 }
+.sponsors-bottom-pattern {
+    position:relative;
+    transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+.sponsors-contact-us-sub-heading p, .sponsors-contact-us-sub-heading {
+    font-size: 1.5rem;
+    
+}
+.sponsors-contact-us-sub-heading {
+ width: 80%;
+ text-align: center;
+ margin: 0 auto;   
+}
+}

@@ -1950,7 +1950,7 @@ html {
 
 @media (max-width: 480px) {
     .slider-heading p {
-        font-size: 7.5vw !important;
+        font-size: 6vw !important;
     }
 
     .slider-sub-heading p {
@@ -2008,6 +2008,12 @@ html {
 
     .sponsors-heading {
         margin-top: 7.5% !important;
+    }
+    .slider-sub-heading {
+        top: 1rem !important;
+    }
+    .slider-text {
+        top: 15.5rem !important;
     }
 }
 
@@ -2363,7 +2369,7 @@ html {
     }
 
     .slider-heading {
-        top: 12% !important;
+        top: 4% !important;
     }
 
     .slider-text {
@@ -2383,12 +2389,12 @@ html {
         height: 49rem !important;
     }
 }
-
+/* 
 @media (max-width: 410px) {
     .speakers {
         height: 50rem !important;
     }
-}
+} */
 
 @media (max-width: 500px) {
     .sponsors-heading h2 {
@@ -2397,6 +2403,9 @@ html {
 
     .heading-1 {
         font-size: 5vw !important;
+    }
+    .speakers {
+        height: 55rem !important;
     }
 }
 
@@ -2413,9 +2422,15 @@ html {
     }
 }
 
+@media (max-width: 700px) {
+    .csslider1>ul>div {
+        margin-top: 2.5rem;
+    }
+    
+}
 @media (max-width: 400px) {
     .faq-heading h2 {
-        font-size: 12vw !important;
+        font-size: 10vw !important;
     }
 
     .main-heading {
@@ -2618,8 +2633,8 @@ html {
     -ms-flex-line-pack: center;
     align-content: center;
     grid-column-gap: 5px;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     display: grid;
@@ -3049,6 +3064,9 @@ html {
     .team-border-2 {
         min-width: 70px;
         min-height: 70px;
+    }
+    .about-content-1 {
+        padding-bottom: 6rem !important;
     }
 }
 
@@ -4219,11 +4237,11 @@ tr:hover {
 
 @media (max-width: 400px) {
     .main-video {
-        height: 165% !important;
+        height: 150% !important;
     }
 
     .main-video video {
-        height: 50% !important;
+        height: 59% !important;
     }
 
 }
@@ -4339,6 +4357,12 @@ tr:hover {
     }
 
 }
+@media (max-width: 400px) {
+    .card-container {
+        margin-top: 2.5rem;
+    }
+
+}
 
 .prizes-footer {
     font-size: 2.8rem;
@@ -4353,8 +4377,7 @@ tr:hover {
     th {
         font-size: 2.5vw !important;
     }
-
-@media (max-width: 700px) {}
+}
 
 @media (max-width: 450px) {
     #day {
