@@ -39,6 +39,6 @@ def myajaxtestview(request):
         email_password = 'cvzolwemcagnqgol'
         connection.login(email_address, email_password )
         connection.sendmail(from_addr=email_address, to_addrs=content['student_email'], 
-        msg="subject:hi \n\n this is my message")
+        msg="subject:Los Gatos Hacks Registration Confirmation \n\n    Thanks for registering for the 2023 Los Gatos Hacks Hackathon on 9/9-9/10. We can't wait to see what amazing creations you can bring to life! \n    If you have any questions, please email us at losgatoshacks@gmail.com. \n\nKind regards, \nLos Gatos Hacks Team")
 
     return HttpResponse(request.POST['text'])
