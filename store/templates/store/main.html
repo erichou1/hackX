@@ -171,10 +171,10 @@
                     <p>Los Gatos Hacks 2023</p>
                 </div>
                 <div class="sub-heading">
-                    <p>8.26-8.27</p>
+                    <p>9.09-9.10</p>
                 </div>
                 <a class="register-button button" target="_blank"
-                    href="https://formfacade.com/public/101224845639242339892/all/form/1FAIpQLSf9TiF7RvSJC7pU2BC5EicPBMV9Upbw7nhn9U41rkLGJXvLuQ">Register
+                    href="/form/">Register
                 </a>
             </div>
         </div>
@@ -657,7 +657,7 @@
                             d="M9.95 5.843L7.828 7.964l2.122 2.122L8.536 11.5 5 7.964 8.536 4.43 9.95 5.843zM8 16c-4.418 0-8-3.59-8-8 0-4.418 3.59-8 8-8 4.418 0 8 3.59 8 8 0 4.418-3.59 8-8 8zm0-2c3.307 0 6-2.686 6-6 0-3.307-2.686-6-6-6-3.307 0-6 2.686-6 6 0 3.307 2.686 6 6 6z"
                             fill-rule="evenodd" />
                     </svg></span>
-                <pre id="day">Saturday 1/16</pre>
+                <pre id="day">Saturday 9/9</pre>
                 <span class="rightarrow" id="rightarrow" onclick="shiftForward()">
                     <svg id="rightarrow-svg" fill="gainsboro" width="800px" height="800px" viewBox="0 0 16 16"
                         xmlns="http://www.w3.org/2000/svg">
@@ -905,7 +905,7 @@
                         </div>
                         <div class="answer">
                             <p>Click <a class="faq-register" target="_blank"
-                                    href="https://formfacade.com/public/101224845639242339892/all/form/1FAIpQLSf9TiF7RvSJC7pU2BC5EicPBMV9Upbw7nhn9U41rkLGJXvLuQ">here</a>
+                                    href="/form/">here</a>
                                 to register!</p>
                         </div>
                     </div>
@@ -921,7 +921,7 @@
                         <div class="answer">
                             <p>Registration will open in early June and close on August 19th. Click <a
                                     class="faq-register" target="_blank"
-                                    href="https://formfacade.com/public/101224845639242339892/all/form/1FAIpQLSf9TiF7RvSJC7pU2BC5EicPBMV9Upbw7nhn9U41rkLGJXvLuQ">here</a>
+                                    href="/form/">here</a>
                                 to register!</p>
                         </div>
                     </div>
@@ -1302,7 +1302,7 @@
                         <h5>Register For the Los Gatos Hacks Hackathon</h5>
                     </div>
                     <a class="footer-register-button button" target="_blank"
-                        href="https://formfacade.com/public/101224845639242339892/all/form/1FAIpQLSf9TiF7RvSJC7pU2BC5EicPBMV9Upbw7nhn9U41rkLGJXvLuQ">Register</a>
+                        href="/form/">Register</a>
                 </div>
             </div>
         </div>
@@ -1513,14 +1513,14 @@
         })
     });
 
-    var shiftDay = "Saturday 1/16";
+    var shiftDay = "Saturday 9/9";
 
     const leftarrow = document.getElementById("leftarrow");
     const rightarrow = document.getElementById("rightarrow");
     function shiftBackward() {
-        if (shiftDay == "Sunday 1/17") {
-            shiftDay = "Saturday 1/16";
-            document.getElementById("day").innerHTML = "Saturday 1/16";
+        if (shiftDay == "Sunday 9/10") {
+            shiftDay = "Saturday 9/9";
+            document.getElementById("day").innerHTML = "Saturday 9/9";
             document.getElementById("schedSun").style.display = "none";
             document.getElementById("leftarrow-svg").style.fill = "gray";
             document.getElementById("rightarrow").style.cursor = "pointer";
@@ -1531,9 +1531,9 @@
     }
 
     function shiftForward() {
-        if (shiftDay == "Saturday 1/16") {
-            shiftDay = "Sunday 1/17";
-            document.getElementById("day").innerHTML = "Sunday 1/17";
+        if (shiftDay == "Saturday 9/9") {
+            shiftDay = "Sunday 9/10";
+            document.getElementById("day").innerHTML = "Sunday 9/10";
             document.getElementById("schedSat").style.display = "none";
             document.getElementById("leftarrow-svg").style.fill = "gainsboro";
             document.getElementById("rightarrow").style.cursor = "default";

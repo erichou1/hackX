@@ -8,5 +8,7 @@ from django.conf import settings
 urlpatterns = [
     path('', views.store, name="store"),
     path('sponsors/', views.sponsors, name="sponsors"),
+    path('form/', views.form, name="form"),
+    path('my-ajax-test/', views.myajaxtestview, name='ajax-test-view'),
 
 ]
