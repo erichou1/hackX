@@ -1010,7 +1010,7 @@ html {
     100% {
         -webkit-box-shadow: inset 0 0 0 1px rgb(251, 236, 181);
         background: rgb(251, 236, 181);
-        background: url("/hackX/static/images/yellow_cloud.svg");
+        background: url("/static/images/yellow_cloud.svg");
         background-repeat: no-repeat;
         background-size: 105%;
         background-position: center;
@@ -1046,7 +1046,7 @@ html {
     33.32333333333334% {
         box-shadow: none;
         background: rgb(251, 236, 181);
-        background: url("/hackX/static/images/yellow_cloud.svg");
+        background: url("/static/images/yellow_cloud.svg");
         background-repeat: no-repeat;
         background-size: 105%;
         background-position: center;
@@ -1211,7 +1211,7 @@ html {
 .csslider1>#cs_pause1_1:checked~.cs_bullets>label.num1,
 .csslider1>#cs_slide1_2:checked~.cs_bullets>label.num2,
 .csslider1>#cs_pause1_2:checked~.cs_bullets>label.num2 {
-    background: url("/hackX/static/images/yellow_cloud.svg");
+    background: url("/static/images/yellow_cloud.svg");
     background-repeat: no-repeat;
     background-size: 105%;
     background-position: center;
