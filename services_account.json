@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "losgatoshacksspreadsheets",
+  "private_key_id": "091a2f14fe023abdccc139c0edc393bc079ba9cb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmzAEWeWu+mRu+\nIJOZ/Oek7c62Ulup42VPQsHgolMYgrwaoSfN9DlsxYiZe1GjZq6XrBrvVtEs7yLt\nrGAL2axlxdGs7NAq1Zq9OyQ/++HXhmEhZGaALEtiZcbE7M5xsRHK5ZlI+qENfEXw\nBhLYj8LtnWA8UKsTRrfbwma4tAg1ZEKd5D+zXKObvpZEo+H2XtdOK4p29R/YeRdJ\nonWCeG+EJqPZo7ZKNZHDHfpq39i9acipQfn5OBFl8M0j64AcrS1Nt0XmSvp+ZKiI\neTD2xo2bDQH9fwk80BSBjYB59J0L3EmkxaDdAFo6XONyzV8T6RFpmNKNf0CPRH1f\nViaLjQxRAgMBAAECggEABrQoTwjuRajNrqSMiiHaBYzxQ+6ndHqJNdhPBoI/qLqI\naOGVQffQ3whJZzHHpDOaTMpEAt6QZafu1XKaIZ/MCAMdXD/gVfhj0bswx8mN2CW0\nfa0VWY1uMjQ4+u0xluww9OCpen9oPayC+xSjaUTN5tLubT4owguTlCeKDV5e/hZK\ny0Rwh51qsWR10XTEb60HdvjdTnXr9lT+4kS9pUedTMfZiD3CnjYoUuDo5oviatd0\nurUUFHla5rBjxsWMR6d1mjUQU2FD9JsMHNMkw1IrA7jnYcFTWiZcTcUc9HfHudXs\nDD/mmKk9y0k2Xq3vZwgyQH+fzER/PyD2sMXniTDCYQKBgQDllxox8VoZzSeT/ZFy\n015BqR9VloYqG2GHOx2dSnUmczPNx6C/8irpdAIpEOtOVzYsP5eC/tRhii9VDKbf\nDpZnfIBLLo70+leDjbhkQc4/PumqbI9Ih57iAb7x21gOLirG9QW1eR56yo34AfsI\nYh6Q/uUQZe2hQ1A/HGYCPAt4xQKBgQC5+8i2ebSPwRDEqruOY5a69z0p3NCxSrPr\n4ErtZ4OFSTUW/B2CTRS2l6/1K53AwWDxiSyfpbGxzEYvqxA9BrpRzdh1VEBD7Lmv\nZC4U+Lfu7e6OtNQLAyq9FJCsZo7uu7X+GhTIJw6JRk6pXJOLqqNOZLA7Efa/Z+yu\nDmW2YPjGHQKBgQDgwXx+WdSnn4PYR4pEy5DhXIv1QIcU33spZIDIQ2TOAEc9cuj2\nHz9NDSk0RIDmT1AUHyjWr1sAJcPSUbFmeaRZqLL7ZpfCUPStL2bMlvMuTQt4sA/Q\npBuxCp5/rAfW0fFElgdBsVFaScKTgHTcrxlXPoDF/dKUZQ5Ayi8+jsN4NQKBgQCc\nEeI43qDbEZTUtMF3l7LhaqB1BMxMOvgJNMsrtfX0X56hjyfkNHLxVxFdmCBlpOGJ\nTyeXQSCAp38ueUrDK2YnR6ohq3XSilC4EkVpa95OLnRGZRCbvSicSymswtOnGvZ6\nKcDOxZe5MrrH/NwEFEm+e1g3+bcqoDdJSOOpzG53MQKBgBGd7THWXgv8RSH0lMcB\n7i/EcMQne5hkm8k5A/toNgcsV2VjJHXFugW0rkZhvBTHMapvimgIu0SHz3EuvtEQ\nvc/ZuGe9KGJzFvh7/kQES9WAD633oKBTO2R9h00mtQxxJREmR7ADUomrvu6YN3tY\nUGb/gcZV6qNcc5jc0u9NajFV\n-----END PRIVATE KEY-----\n",
+  "client_email": "spreadsheet@losgatoshacksspreadsheets.iam.gserviceaccount.com",
+  "client_id": "114961315757483038753",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spreadsheet%40losgatoshacksspreadsheets.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
