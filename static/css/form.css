@@ -632,7 +632,62 @@ html {
     }
 }
 
+  @media (max-width: 640px) {
+    input[type=date]::before {
+        height: 1000% !important;
+      }
+      input[type=date]::after {
+        height: 1000% !important;
+      }
+}
+.label-1 {
+    white-space: nowrap;
+}
+.form-error {
+    white-space: nowrap;
+}
+.button-1-1 {
+    top: 2.25rem !important;
+    position: relative;
+}
 @media (max-width: 600px) {
+    .button-1-1 {
+        height: 80% !important;
+    }
+    .button-1-1 {
+        top: 3.25rem !important;
+        position: relative;
+    }
+    .form-table {
+        font-size: 3vw;
+    }
+    input[type=date] {
+        appearance: auto !important;
+        -webkit-appearance: auto !important;
+        width: 75vw !important;
+        height: 30px !important;
+        line-height: 30px;
+        color: black;
+        text-align: center;
+        font-size: 3vw;
+        
+    }
+    .date-of-birth-input {
+        vertical-align: middle;
+        line-height: 30px;
+        padding: 6px 12px;
+    }
+    .date-of-birth-input:focus {
+        height: 30px !important;
+        line-height: 30px;
+    }
+    .date-of-birth-input:after {
+        height: 30px !important;
+    }
+    .form-error b {
+        margin-right: 0px !important;
+        
+    }
 
     .navbar-right {
         padding-top: 13%;
@@ -688,7 +743,9 @@ html {
     .lghs-banner img {
         right: 1%;
     }
-
+    .submit-button {
+        padding-left: 1rem !important;
+    }
 }
 
 @media (max-width: 993px) {
@@ -1311,6 +1368,13 @@ label {
 label {
     font-size: 2.5vw;
 }
+.submit-button svg{
+    width: 1.5rem !important;
+    padding-left: 0.25rem;
+}
+.submit-button {
+    padding-left: 0.5rem !important;
+}
 .button-1-1 {
     width: 100%; 
 }
@@ -1332,6 +1396,7 @@ label {
 }
 
 }
+
 @media (max-width: 450px) {
     .button-1-1 {
         width: 120%; 
@@ -1439,6 +1504,9 @@ label {
         .button-2-2 {
             left: 12.5% !important;
         }
+        .submit-button svg {
+            width: 1rem !important;
+        }
        }
 
 @media (min-height: 800px) {
@@ -1536,4 +1604,38 @@ label {
 }
 .table-error {
     margin-top: 0.5rem;
+}
+
+.form-container-4.is-active {
+    display: block;
+}
+
+.form-container-4 {
+    display: none;
+    background-color: white;
+    border-radius: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 34rem;
+    opacity: 0.9;
+
+}
+.button-3 svg {
+    width: 1.5rem;
+}
+.checkmark {
+    position: relative;
+left: 50%;
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+margin-top: 19%;
+padding-bottom: 2.5%
+}
+.form-sub-heading {
+    text-align: center;
+    color: gray;
+}
+.form-heading-2 {
+    margin-bottom: 1rem;
 }
