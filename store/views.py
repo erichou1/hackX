@@ -17,7 +17,9 @@ import gspread
 # Create your views here.
 from .models import *
 
-
+sa = gspread.service_account(filename="services_account.json")
+sh = sa.open("Los Gatos Hacks Emails")
+wks = sh.worksheet("Registrations")
 def store(request):
     context = {}
     return render(request, 'store/main.html')
@@ -32,9 +34,7 @@ def form(request):
     return render(request, 'store/form.html')
 @csrf_exempt    
 def myajaxtestview(request):
-    sa = gspread.service_account(filename="services_account.json")
-    sh = sa.open("Los Gatos Hacks Emails")
-    wks = sh.worksheet("Registrations")
+    
     # sh.add_worksheet(title="Registrations", rows=1, cols=9)
     
     content = eval(request.POST.get("data"))
