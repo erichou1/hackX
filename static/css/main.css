@@ -133,7 +133,7 @@ html {
 }
 
 .navbar-right-discord {
-    top: 37%;
+    top: 32%;
     position: absolute;
     opacity: 0.6;
     padding: 4px;
@@ -152,7 +152,7 @@ html {
 .navbar-right-devpost {
     margin-left: 3.5%;
     position: absolute;
-    top: 40%;
+    top: 37%;
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -175,7 +175,7 @@ html {
 .navbar-right-email {
     position: absolute;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
-    top: 30%;
+    top: 27%;
     margin-left: 6%;
     opacity: 0.6;
     cursor: pointer;
