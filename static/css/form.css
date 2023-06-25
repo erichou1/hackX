@@ -1049,6 +1049,7 @@ input::placeholder {
     transition-duration: 1000ms;
     text-decoration-thickness: 4px;
     text-decoration-line: underline;
+    cursor: default;
   }
   .form-container-content {
     padding-left: 1.5rem;

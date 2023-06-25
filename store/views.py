@@ -24,6 +24,9 @@ def store(request):
     context = {}
     return render(request, 'store/main.html')
 
+def email(request):
+    context = {}
+    return render(request, 'store/email.html')
 
 def sponsors(request):
     context = {}
