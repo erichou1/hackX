@@ -12,3 +12,4 @@ urlpatterns = [
     path('my-ajax-test/', views.myajaxtestview, name='ajax-test-view'),
     path('email/', views.email, name='email'),
 ]
+

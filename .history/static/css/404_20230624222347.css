@@ -1,0 +1,13 @@
+.main-video video {
+    width: 75%;
+    height: 75%;
+    z-index: -100;
+    background-position: 100%;
+    
+    margin: auto;
+    position: relative;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+}

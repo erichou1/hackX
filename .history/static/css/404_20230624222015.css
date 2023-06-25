@@ -1,0 +1,14 @@
+.main-video video {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    z-index: -100;
+    background-position: 0%;
+    background-size: cover;
+    margin: auto;
+    position: absolute;
+    top: -100%;
+    bottom: -100%;
+    left: -100%;
+    right: -100%;
+}
