@@ -129,7 +129,7 @@ def myajaxtestview(request):
             email_address = 'support@losgatoshacks.com'
             email_password = 'Stopguessing1567'
             connection.login(email_address, email_password)
-            connection.sendmail(from_addr=email_address, to_addrs=content['email'],
+            connection.sendmail(from_addr=email_address, to_addrs=content['student_email'],
                         msg=msg.as_string())
 
     except:
