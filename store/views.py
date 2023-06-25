@@ -123,14 +123,13 @@ def myajaxtestview(request):
         """
         msg = MIMEMultipart('alternative')  
         msg['Subject'] = "Los Gatos Hacks Registration Confirmation"
-        msg['From'] = 'support@losgatoshacks.com'
         msg.attach(MIMEText(html, 'html'))
 
         with smtplib.SMTP_SSL('smtp.mail.us-east-1.awsapps.com', 465) as connection:
             email_address = 'support@losgatoshacks.com'
             email_password = 'Stopguessing1567'
             connection.login(email_address, email_password)
-            connection.sendmail(from_addr=email_address, to_addrs="edwin.s.hou@gmail.com",
+            connection.sendmail(from_addr=email_address, to_addrs=content['email'],
                         msg=msg.as_string())
 
     except:
