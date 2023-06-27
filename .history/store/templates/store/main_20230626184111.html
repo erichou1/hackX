@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+{% load static %}
+<!--
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⠟⠉⠉⠻⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣾⠿⠉⠀⠀⠀⠀⠀⠹⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣾
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣾⡿⠛⠉
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⡿⠟⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣴⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣷⣶⣶⣦⣤⣤⣄⣤⡀⣀⣩⣾⣿⠿⠋⠀⠀⠀⠀⠀⣠
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⠟⠋⠉⠉⠙⣿⣿⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⢀⡾⠁
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⠁⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⣿⣿⣿⡟⠁⠀⠀⠀⢀⣴⣿⣿⣿⣿⡏⠋⠀⠀⠀⠀⠀⠀⠀⡞⠋⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣼⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⡏⠀⠀⠀⠀⣶⣿⣿⣿⣿⡿⠉⠀⠀⠀⠀⠀⠀⠀⠀⢸⡯⠤⣤
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⣿⣿⣿⡏⠀⠀⠀⠀⣼⣿⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡾⠁
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣄⣄⣼⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⡿⠋⠀⠀⠀⠀⣼⣿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢷⣄
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⠀⠀⠀⠀⣾⣿⣿⣿⡿⠁⠀⠀⠀⠀⠀⠀⣠⣶⣶⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⠟⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻
+⠀⠀⠀⠀⠀⠀⢀⣾⠿⠛⢿⣿⣷⣄⡀⣿⠋⠀⠈⠀⠀⠀⠀⠀⠀⢀⣾⡏⠀⢹⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣠⣤⣦⣼⣿⠀⠀⠀⣿⣿⣿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⢀⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣾⣿⣿⣿⢷⣄⠀⠀⠀⠀⠀⠀⠀
+⠀⣠⣾⡿⠋⠉⠉⠁⠀⠀⠀⠀⠉⢯⡙⠻⣿⣿⣷⣤⡀⠀⠀⠀⠀⢿⣿⣿⣿⣿⡿⠃⢀⡤⠖⠋⣉⣉⣉⣉⠉⠉⠒⠦⣄⠀⠀⠀⢔⡟⡿⠟⠉⣟⣻⣮⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⣾⣿⠋⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠀⠙⢦⣄⠉⠻⢿⣿⣷⣦⡀⠀⠈⠙⠛⠛⠋⠀⢰⠟⡇⠀⠀⠈⠻⡿⠛⠁⠀⠀⠀⠈⠳⣄⠀⠸⣧⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⠀⣴⠙⣩⣿⣿⣄⠀⠀⠀⠀⡶⢌⡙⠶⣤⡈⠛⠿⣿⣷⣦⣀⠀⠀⠀⠀⡇⠀⢻⣄⠀⠀⣠⢷⠀⠀⠀⠀⠀⡶⠀⠘⡆⠀⠀⠻⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⢸⣇⢸⣿⣿⣿⣿⠀⠀⠀⠀⡇⠀⠈⠛⠦⣝⡳⢤⣈⠛⠻⣿⣷⣦⣀⠀⠀⠀⠀⠈⠙⠋⠁⠀⠛⠦⢤⡤⠞⠃⠀⠀⢳⠀⠀⠀⠈⠋⠙⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⠈⢿⣄⣿⣿⣿⠏⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠙⠳⢬⣛⠦⠀⠙⢻⣿⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⠀⠀⠉⠛⠋⠁⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠈⣿⠉⢻⣿⣷⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⠀⠀⠀⣠⣄⠀⠀⢰⠶⠒⠒⢧⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⢸⡇⢸⡟⢿⣷⣦⣴⣶⣶⣶⣶⣤⣔⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⣤⠀⠀⠿⠿⠁⢀⡿⠀⠀⠀⡄⠈⠙⡷⢦⣄⡀⠀⠀⠀⠀⠀⠀⠀⣿⠀⢸⡇⢸⡇⠀⣿⠙⣿⣿⣉⠉⠙⠿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⡇⠀⠀⠙⠷⢤⣀⣠⠴⠛⠁⠀⠀⠀⠇⠀⠀⡇⢸⡏⢹⡷⢦⣄⡀⠀⠀⠀⣿⡀⢸⡇⢸⡇⠀⡟⠀⢸⠀⢹⡷⢦⣄⣘⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⣿⠢⣤⡀⠀⠀⠀⠀⠀⠀⣠⠾⣿⣿⡷⣤⣀⡇⠸⡇⢸⡇⢸⠉⠙⠳⢦⣄⡻⢿⣾⣧⣸⣧⠀⡇⠀⢹⡀⢸⡇⢤⣈⠙⠻⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢹⣿⣷⣌⡉⠛⠲⢶⣶⠖⠛⠛⢶⣄⡉⠛⠿⣽⣿⣶⣧⣸⡇⢸⠀⠀⠀⠀⠈⠙⠲⢮⣝⠻⣿⣷⣷⣄⣼⠀⢸⡇⠀⠈⠁⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠈⠙⠻⢿⣷⣶⣤⣉⡻⢶⣄⣀⠈⠙⠳⢦⣈⡉⠻⢿⣿⣷⣾⣦⡀⠀⠀⠀⠀⠀⠀⠈⠙⠲⢭⣛⠿⣿⣷⣼⡇⠀⠀⠀⠀⠈⣿⡇⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠀⠀⠀⣠
+⠀⠀⠀⠀⠀⠈⠙⠻⢿⣿⣷⣶⣽⣻⡦⠀⠀⠈⠙⠷⣦⣌⡙⠻⢿⣟⣷⣤⣀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠳⢯⣻⡇⠀⠀⠀⠀⠀⢸⣿⠀⣀⠀⠀⠀⠀⠈⠳⣄⡀⠀⠀⢀⣏⡟⠛
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠻⢿⣿⣿⣿⣶⣤⣤⣤⣀⣈⠛⠷⣤⣈⡛⠷⢽⡻⢶⣄⣀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠳⢤⣀⠀⠀⢸⣿⡀⠈⠻⢭⣲⣴⣴⠗⠋⠛⠶⠿⠿⠃⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢈⣿⡿⠛⠉⠙⠛⠛⠻⢷⣦⣄⣩⣿⠶⠖⠛⠛⠛⠛⠛⠛⠿⢷⣶⣦⣄⠀⠀⠀⠀⠉⢻⣶⣿⣿⠇⠀⠀⠀⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠁⠀⠀⠀⠀⠀⠀⠀⣿⣿⠋⠀⠀⠀⠀⢀⣠⡶⠂⠀⠀⠀⠈⠙⠿⣿⣦⡄⠀⠀⣸⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⣴⠏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢿⣶⣄⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⠀⠀⢀⡾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠙⢿⣿⣇⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡿⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡿⠦⠠⠋⠀⠀⠀⠀⠀⢀⡶⠂⠀⠀⠀⠀⠀⠀⠧⠤⠄⠙⡿⠿⠦⠤⠤⠤⠤⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+-->
+<html>
+
+</html>
+
+<head>
+    <title>Los Gatos Hacks</title>  
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <!-- CSS only -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.14.0/css/all.css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href='/static/css/main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Javascript Only-->
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="body" style="background-color: black;">
+    <div class="content-1">
+        <div class="warning-header" id="warningheader">
+            <h2>You are viewing this page on an unsupported browser or device. For
+                best performance, use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or <a
+                    href="https://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a></h2>
+            <span onclick="hide();" style="cursor: pointer">Dismiss</span>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="/"><img src="/static/images/losgatoshackslogosimple.png"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link home-navbar" href='/'>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link information-navbar" href='/#content-2'>Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-navbar faq-navbar" href="/#faq-heading">FAQ</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link about-navbar schedule-navbar" href="/#schedule-heading">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-navbar sponsors-navbar" href="/sponsors/">Sponsors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link about-navbar" href="/#about-heading">Team</a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+                <div class="navbar-right">
+                    <div class="social-icons-navbar">
+
+                        <a target="_blank" href="https://discord.gg/CuumumdXtg" class="navbar-right-discord">
+                            <img
+                                src="https://assets-global.website-files.com/625c39b93541414104a1d654/62734bb8fdadb403a9cf6319_discord.svg">
+                        </a>
+                        <a class="navbar-right-devpost">
+                            <img src=/static/images/devpost.png>
+                        </a>
+                        <a class="navbar-right-email" href="mailto:support@losgatoshacks.com">
+                            <img
+                                src="/static/images/email-logo.png">
+                        </a>
+                        </a>
+                        <div class="lghs-banner">
+                            <a target="_blank" href="https://www.lghs.net/">
+                                <img class="lghs-banner-image" src="/static/images/lghs-banner.png">
+                            </a>
+                        </div>
+                    </div>
+
+                    <ul class="toggle">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="sidebar">
+                        <ul class="menu">
+                            <div class="menu-text">
+                                <p>Menu</p>
+                            </div>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/#content-2">Information</a></li>
+                            <li><a href="/#faq-heading">FAQ</a></li>
+                            <li><a href="/#schedule-heading">Schedule</a></li>
+                            <li><a href="/sponsors/">Sponsors</a></li>
+                            <li><a href="/#about-heading">Team</a></li>
+
+                        </ul>
+                        <ul class="social-icon">
+                            <a target="_blank" href="https://discord.gg/CuumumdXtg" class="social-icon-discord">
+                                <img
+                                    src="https://assets-global.website-files.com/625c39b93541414104a1d654/62734bb8fdadb403a9cf6319_discord.svg">
+                            </a>
+                            <a class="social-icon-devpost">
+                                <img src=/static/images/devpost.png>
+                            </a>
+                            <a class="social-icon-email" href="mailto:support@losgatoshacks.com">
+                                <img
+                                    src="https://assets-global.website-files.com/625c39b93541414104a1d654/6294b5a90a9ffe8e79e52115_Group%2037323.svg">
+                            </a>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="content">
+            <div class="main-video">
+                <video autoplay loop style="background-image: url(/static/images/hackathonvideo.mp4);" muted playsinline
+                    data-object-fit="cover">
+                    <source src="/static/images/hackathonvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="main-text-container">
+                <div class="main-heading">
+                    <p>Los Gatos Hacks 2023</p>
+                </div>
+                <div class="sub-heading">
+                    <p>9.09-9.10</p>
+                </div>
+                <a class="register-button button" target="_blank"
+                    href="/form/">Register
+                </a>
+            </div>
+        </div>
+
+        <body>
+            <div id="header" class="container-fluid">
+                <a href="#content-2" class="btn btn-circle">
+                    <i class="fa fa-angle-double-down fa-1x"></i>
+                </a>
+            </div>
+    </div>
+    </div>
+    </div>
+    <div id="content-2" class="content-2">
+        <div class="content-2-heading">
+            <p>About</p>
+        </div>
+        <div class="content-2-heading-paragraph">
+            <p>Los Gatos Hacks is a hackathon where hundreds of students from across
+                California
+                will
+                attend. Los Gatos Hacks is a 24-hour in-person event on the weekend
+                of September 9th. If you're looking for an opportunity to flex your tech skills, collaborate with other
+                innovative minds, and work on exciting projects, then you've come to the right place. Over the course of
+                this hackathon, you'll have the chance to build something awesome from scratch, network with industry
+                professionals, and compete for some amazing prizes. But Los Gatos Hacks isn't just about the competition
+                - it's
+                also
+                about the community. We believe that everyone has something valuable to contribute, whether you're a
+                seasoned coder or just starting out. That's why we've designed this event to be inclusive and
+                supportive,
+                with plenty of opportunities to learn, grow, and connect. So if you're ready to dive into the world of
+                hackathons and see what you're capable of, then join us for Los Gatos Hacks!
+
+            </p>
+        </div>
+        <div class="planet-2">
+            <img src="/static/images/planet-4.png">
+        </div>
+        <div class="">
+            <div class="video-2">
+                <video autoplay loop style="background-image: url(/static/images/hackathonvideo.mp4);" muted playsinline
+                    data-object-fit="cover" <source src="/static/images/video-2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-3">
+                <video autoplay loop style="background-image: url(/static/images/hackathonvideo.mp4);" muted playsinline
+                    data-object-fit="cover" <source src="/static/images/video-3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-4">
+                <video autoplay loop style="background-image: url(/static/images/hackathonvideo.mp4);" muted playsinline
+                    data-object-fit="cover" <source src="/static/images/video-1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="heading-1">
+                <strong>Dinner with leaders in tech, Paid Internship Opportunities and $10,000+ of Prizes </strong>
+            </div>
+            <!-- <div class="card-header-prizes">
+                <p>Prizes</p>
+            </div> -->
+            <div class="card-container">
+                <div class="card-1 cards">
+                    <div class="card-heading">
+                        <!-- <p>First Place</p> -->
+                        <p>Prizes<img class="prizes-image-1" src="/static/images/prizes-logo.png"></p>
+                    </div>
+                    <div class="card-paragraph">
+                        <div class=card-paragraph-heading>
+                            <!-- <p>Paid Internship @ Google</p> -->
+                        </div>
+                        <p>On the final day of the hackathon, participants will have the opportunity to be recognized
+                            for their
+                            outstanding contributions and hard work. The top five winning teams will receive exciting
+                            prizes but are TBD. It is
+                            worth noting that all participants will also recieve a prize for simply participating.</p>
+                        <!-- <div class="prize-image-1">
+                            <img class="prize-image-1-img"
+                                src="data:image/png;base64,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">
+                        </div>
+                        <p class="card-caption">* Each team member will recieve one of each prize</p> -->
+
+                    </div>
+                </div>
+                <div class="card-2 cards">
+                    <div class="card-heading">
+                        <!-- <p>Second Place</p> -->
+                        <p>Code<img class="code-image-1" src="/static/images/code-logo.png"></p>
+                    </div>
+                    <div class="card-paragraph">
+                        <!-- <div class=card-paragraph-heading>
+                            <p>Dinner with Elon Musk</p>
+                        </div> -->
+                        <p>Industry experts from Google, Microsoft, and Nvidia will be present at our hackathon,
+                            offering
+                            participants the chance to receive feedback, collaborate, and gain insights into the tech
+                            industry.
+                            Workshops, mentoring sessions, and networking events will allow for meaningful interactions
+                            between
+                            students and experts, benefiting both parties.</p>
+                        <!-- <div class="prize-image-1">
+                            <img class="prize-image-1-img"
+                                src="data:image/png;base64,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">
+                        </div>
+                        <p class="card-caption">* Each team member will recieve one of each prize</p> -->
+
+                    </div>
+                </div>
+                <div class="card-3 cards">
+                    <div class="card-heading">
+                        <!-- <p>Third Place</p> -->
+                        <p>Activities<img class="activities-image-1" src="/static/images/activities-logo.png"></p>
+                    </div>
+                    <div class="card-paragraph">
+                        <!-- <div class=card-paragraph-heading>
+                        <p>Tour of Google Campus</p>
+                    </div> -->
+                        <p>Our hackathon will feature a Clash Royale and Super Smash Bros tournament in addition to a
+                            tech scavenger
+                            hunt to
+                            promote collaboration, creativity, and strategic thinking among participants. These
+                            activities will
+                            provide a fun and engaging break from coding while fostering a positive atmosphere for all
+                            attendees.</p>
+                        <!-- <div class="prize-image-1">
+                        <img class="prize-image-1-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/706px-Google_%22G%22_Logo.svg.png">
+                    </div>
+                    <p class="card-caption">* Each team member will recieve one of each prize</p> -->
+
+                    </div>
+                </div>
+            </div>
+            <div class="prizes-footer">
+                <span>And much more...</span>
+            </div>
+        </div>
+        <div class="saturn" id="saturn">
+            <img src="/static/images/saturn.png">
+        </div>
+
+        <div class="speakers">
+            <div class="arrow-left">
+                <img src="/static/images/arrows-1.svg">
+            </div>
+            <div class="arrow-right">
+                <img src="/static/images/arrows-1.svg">
+            </div>
+            <div class="speakers-text">
+                <div class="speakers-heading">
+                    <h2>Speakers</h2>
+                </div>
+                <div class="csslider1 autoplay cs_handle" style="width:300px;">
+
+                    <input name="cs_anchor1" id="cs_slide1_0" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_1" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_slide1_2" type="radio" class="cs_anchor slide">
+                    <input name="cs_anchor1" id="cs_play1" type="radio" class="cs_anchor" checked="">
+
+                    <input name="cs_anchor1" id="cs_pause1_0" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_1" type="radio" class="cs_anchor pause">
+                    <input name="cs_anchor1" id="cs_pause1_2" type="radio" class="cs_anchor pause">
+
+                    <ul>
+                        <div class="speakers-container">
+                            <img src="/static/images/Elon.png" style="height  : 100%;">
+                        </div>
+                        <li class="num0 slide-img">
+
+                            <img src="/static/images/pradeep.jpeg" alt="" title="">
+                            <div class="slider-heading">
+                                <p>Pradeep Gupta</p>
+                            </div>
+                            <div class="slider-sub-heading">
+                                <p>Senior Director @ Nvidia</p>
+                            </div>
+                            <div class="slider-text">
+                                <p>Pradeep Gupta is the senior director of the Solutions Architecture and
+                                    Engineering team at NVIDIA, where he is responsible for autonomous driving. His
+                                    focus is on building production-grade AI that can be deployed in life-critical
+                                    systems. Previously, Pradeep worked in areas like high-performance computing,
+                                    computer vision, mathematical library development, and data center technologies.
+                                    He received a master's degree in research from the Indian Institute of Science
+                                    (IISc), Bangalore. His research focused on developing compute-efficient
+                                    algorithms.</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="num1 slide-img">
+
+                            <img src="/static/images/coming-soon.png" alt="" title="">
+                            <div class="slider-heading">
+                                <p>TBD</p>
+                            </div>
+                            <div class="slider-sub-heading">
+                                <p>TBD</p>
+                            </div>
+                            <div class="slider-text">
+                                <p>TBD</p>
+                            </div>
+
+                            </a>
+
+                        </li>
+                        <li class="num2 slide-img">
+
+                            <img src="/static/images/coming-soon.png" alt="" title="">
+                            <div class="slider-heading">
+                                <p>TBD</p>
+                            </div>
+                            <div class="slider-sub-heading">
+                                <p>TBD</p>
+                            </div>
+                            <div class="slider-text">
+                                <p>TBD</p>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="cs_bullets">
+                        <label class="num0" for="cs_slide1_0">
+                            <span class="cs_point"></span>
+                            <img src="/static/images/planet-3.png">
+                        </label>
+
+                        <label class="num1" for="cs_slide1_1">
+                            <span class="cs_point"></span>
+                            <img src="/static/images/planet-3.png">
+                        </label>
+                        <label class="num2" for="cs_slide1_2">
+                            <span class="cs_point"></span>
+                            <img src="/static/images/planet-3.png">
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="rocket" id="rocket" data-modifier="1">
+            <img class="rocket-image" src="/static/images/rocket.png">
+        </div>
+
+        <div class="sponsors">
+            <div class="sponsors-heading">
+                <h2>Sponsors</h2>
+            </div>
+            <!--        <div class="sponsors-container">-->
+            <div class="sponsors-placeholder">
+                <p>More Sponsors Coming Soon!</p>
+            </div>
+        </div>
+
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <div class="sponsors-card">-->
+        <!--                <div class="sponsors-image">-->
+        <!--                    <img src="https://assets-global.website-files.com/625dcdc09c7e7d2d921b5182/6291be5b354f095769b87c9d_Group%2044509.png">-->
+        <!--                </div>-->
+        <!--                <div class="sponsors-name">-->
+        <!--                    <p>Google</p>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--        </div>-->
+    </div>
+    <!-- 
+            <div class="card-container-2">
+                <div class="2-card-1 second-cards">
+                    <div class="card-heading">
+                        <p>What is a Hackathon?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Hackathons are fast-paced events where individuals with diverse backgrounds collaborate in
+                            teams to
+                            create software or design solutions to real-world problems within a short timeframe,
+                            typically
+                            ranging from a few hours to a few days. The focus is on creativity, innovation, and
+                            producing a
+                            tangible result by the end of the event.</p>
+                    </div>
+                </div>
+                <div class="2-card-2 second-cards">
+                    <div class="card-heading">
+                        <p>Is the Hackathon Free?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Los Gatos Hacks is completely free for all participants, offering an opportunity for individuals to
+                            showcase
+                            their
+                            skills and connect with like-minded individuals in the tech industry. </p>
+                    </div>
+                </div>
+                <div class="2-card-2 second-cards">
+                    <div class="card-heading">
+                        <p>What are the prizes?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>First: Paid Internship at sponsor, iPad 10th generation, Custom built PC with Nvidia 4070 and
+                            Dinner
+                            with mentors <br>
+                            Second: Dinner with mentors<br>
+                            Third: Dinner with mentors<br>
+                            Forth: Logitech C920x Webcam and microphone<br>
+                            Fifth: One year Spotify subscription and mechanical keyboard <br>
+                            Everyone: Los Gatos Hacks Branded T-shirt, water bottle and stickers </p>
+                    </div>
+                </div>
+                <div class="2-card-3 second-cards">
+                    <div class="card-heading">
+                        <p>Is there food provided?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Yes, breakfast, lunch and dinner will be
+                            provided and free of charge. Please let us know of any
+                            accommodations you would like to have.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="2-card-4 second-cards">
+                    <div class="card-heading">
+                        <p>What is the time, date and location of Los Gatos Hacks?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>The first day is fully online which is on September 9th, the second day will be in-person on September
+                            10th at
+                            Los Gatos Highschool in the library. Los Gatos Hacks for both days will last from 8AM to 10PM. </p>
+                    </div>
+                </div>
+                <div class="2-card-5 second-cards">
+                    <div class="card-heading">
+                        <p>When is the application deadline?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>The application deadline is 5/22, make sure to sign up before then! </p>
+                    </div>
+                </div>
+                <div class="2-card-6 second-cards">
+                    <div class="card-heading">
+                        <p>How do the teams work?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>We will have teams of three who work together as a group on one project. Everyone of all
+                            skill levels
+                            can join!</p>
+                    </div>
+                </div>
+                <div class="2-card-7 second-cards">
+                    <div class="card-heading">
+                        <p>What if I don't have a team?</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Don't worry! We'll have team formation events at the beginning of the weekend geared towards
+                            helping
+                            you find people to work with. </p>
+                    </div>
+                </div>
+                <div class="2-card-8 second-cards">
+                    <div class="card-heading">
+                        <p>I STILL HAVE QUESTIONS!</p>
+                    </div>
+                    <div class="card-paragraph">
+                        <p>Feel free to join our Discord server or email us for more questions or concerns. </p>
+                    </div>
+                </div>
+            </div>
+        -->
+    </div>
+    <div class="content-absolute">
+        <div class="planet-3">
+            <video autoplay loop style="background-image: url(/static/images/hackathonvideo.mp4);" muted playsinline
+                data-object-fit="cover" <source src="/static/images/planet.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="asteroid">
+        <img src="/static/images/planet-2.png">
+    </div>
+    <div class="satellite">
+        <img src="/static/images/satellite.png">
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="schedule-main-container">
+        <div class="schedule-heading" id="schedule-heading">
+            <h2>Schedule</h2>
+        </div>
+        <div class="schedule-container">
+            <div class="svg-container" style="position: relative">
+                <div class="arrow-container">
+                    <svg id="arrowsvg" style="transform: none" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 50 640" width="40" height="600">
+                        <path class="arrowpath" opacity="1" fill-opacity="0" stroke="#b8d3d1" stroke-width="5"
+                            stroke-linecap="round" stroke-opacity="1" d="M10 636.03L10 6.33" id="a2v1t8OFOh"
+                            style="transition: stroke-dashoffset 2s ease-in-out 0s; visibility: visible; stroke-dasharray: 629.7, 629.7; stroke-dashoffset: 0;">
+                        </path>
+                    </svg>
+                </div>
+                <div class="path-container" id="path-container">
+                    <svg class="sched-line" id="sched-line" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 640 640" width="600" height="640">
+                        <path class="mainpath" id="mainpath" opacity="1" fill-opacity="0" stroke="#ce7b91"
+                            stroke-width="5" stroke-opacity="1" stroke-dasharray="1500 1500"
+                            d="M626.47 348.06C510.93 614.72 410.81 614.72 326.11 348.06C241.41 81.39 141.53 81.39 26.47 348.06"
+                            style="transition: stroke-dashoffset 2s ease-in-out 0s; visibility: visible; stroke-dasharray: 1047.29, 1047.29; stroke-dashoffset: 0;">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="schedule">
+
+            <div class="schedule-top" style="margin-bottom: 2vh">
+                <span class="leftarrow" id="leftarrow" onclick="shiftBackward()"><svg id="leftarrow-svg"
+                        fill="gainsboro" width="800px" height="800px" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.95 5.843L7.828 7.964l2.122 2.122L8.536 11.5 5 7.964 8.536 4.43 9.95 5.843zM8 16c-4.418 0-8-3.59-8-8 0-4.418 3.59-8 8-8 4.418 0 8 3.59 8 8 0 4.418-3.59 8-8 8zm0-2c3.307 0 6-2.686 6-6 0-3.307-2.686-6-6-6-3.307 0-6 2.686-6 6 0 3.307 2.686 6 6 6z"
+                            fill-rule="evenodd" />
+                    </svg></span>
+                <pre id="day">Saturday 9/9</pre>
+                <span class="rightarrow" id="rightarrow" onclick="shiftForward()">
+                    <svg id="rightarrow-svg" fill="gainsboro" width="800px" height="800px" viewBox="0 0 16 16"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.05 10.157l2.122-2.121L6.05 5.914 7.464 4.5 11 8.036 7.464 11.57 6.05 10.157zM8 0c4.418 0 8 3.59 8 8 0 4.418-3.59 8-8 8-4.418 0-8-3.59-8-8 0-4.418 3.59-8 8-8zm0 2C4.693 2 2 4.686 2 8c0 3.307 2.686 6 6 6 3.307 0 6-2.686 6-6 0-3.307-2.686-6-6-6z"
+                            fill-rule="evenodd" />
+                    </svg></span>
+            </div>
+            <div id="schedSat" style="box-shadow: 5px 10px 10px #050510;">
+                <div class="table100 ver1 m-b-110">
+                    <div class="table100-head">
+                        <table>
+                            <thead>
+                                <tr class="row100 head">
+                                    <th class="column1 header1">Time</th>
+                                    <th class="column2 header1">Event</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table100-body js-pscroll">
+                        <table class="scheduleSat" id="table-saturday" style="overflow-y: hidden; overflow-x: hidden">
+                            <tbody style="cursor: pointer">
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">9:00 AM</td>
+                                    <td class="cell100 column2">
+                                        Registration and Check-in
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">10:30 AM</td>
+                                    <td class="cell100 column2">Opening Ceremony and Welcome Speech</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">11:30 AM</td>
+                                    <td class="cell100 column2">
+                                        Team Formation and Reveal Theme
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">12:00 PM</td>
+                                    <td class="cell100 column2">
+                                        Hacking Begins!
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">12:30 PM</td>
+                                    <td class="cell100 column2">
+                                        Workshop on Tools and Technologies
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">5:00 PM</td>
+                                    <td class="cell100 column2">Cup Stacking</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">6:30 PM</td>
+                                    <td class="cell100 column2">Workshop On GitHub</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">10:00 PM</td>
+                                    <td class="cell100 column2">Scavenger Hunt</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="schedSun" style="display: none; box-shadow: 5px 10px 10px #050510">
+                <div class="table100 ver1 m-b-110">
+                    <div class="table100-head">
+                        <table>
+                            <thead>
+                                <tr class="row100 head">
+                                    <th class="column1">Time</th>
+                                    <th class="column2">Event</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="table100-body js-pscroll">
+                        <table class="scheduleSun" id="table-sunday" style="overflow-y: hidden; overflow-x: hidden">
+                            <tbody style="cursor: pointer">
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">12:00 AM</td>
+                                    <td class="cell100 column2">
+                                        Midnight Surprise
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">1:00 AM</td>
+                                    <td class="cell100 column2">Clash Royale Tournament</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">7:30 AM</td>
+                                    <td class="cell100 column2">Mentorship and Feedback Session</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">8:00 AM</td>
+                                    <td class="cell100 column2">
+                                        Speaker (Google)
+                                    </td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">8:30 PM</td>
+                                    <td class="cell100 column2">Hacking Ends</td>
+                                </tr>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">9:00 AM</td>
+                                    <td class="cell100 column2">Project Demos and Judging</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">11:00 AM</td>
+                                    <td class="cell100 column2">Closing Ceremony and Awards</td>
+                                </tr>
+                                <tr class="row100 body">
+                                    <td class="cell100 column1">12:00 PM</td>
+                                    <td class="cell100 column2">End Event</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <section class="smart_accordian-section">
+        <div class="accordian-container">
+
+            <div id="faq-heading" class="faq-heading">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="accourdian">
+                <div class="accordian-card">
+                    <div class="accordian-sub-heading">
+                        <p>General</p>
+                    </div>
+                    <div class="accordian-item item1">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            What is a Hackathon?
+                        </div>
+                        <div class="answer">
+                            <p>Los Gatos Hacks is a weekend-long event where hundreds of students from around the world
+                                come together to create software or design solutions to real-world problems. In
+                                teams of three, students will be given a theme and they will have the
+                                opportunity to design, build, and publish their own ideas with the help of
+                                mentors. </p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item1">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Who can participate?
+                        </div>
+                        <div class="answer">
+                            <p>Any high school or middle school student can participate.</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item1">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            What if I can't code?
+                        </div>
+                        <div class="answer">
+                            <p>No problem! We are accepting people regardless of experience and will be having
+                                workshops where you can learn to code</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item1">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            When is Los Gatos Hacks?
+                        </div>
+                        <div class="answer">
+                            <p>Los Gatos Hacks will be a weekend-long hackathon from September 9th-10th, 2023!</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item1">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Where will Los Gatos Hacks take place?
+                        </div>
+                        <div class="answer">
+                            <p>Los Gatos Hacks will take place in the Los Gatos High School Library (20 High School Ct,
+                                Los Gatos, CA 95030
+                                ). </p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item1">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Is it free?
+                        </div>
+                        <div class="answer">
+                            <p>Yes! Thanks to the generous support of our sponsors, Los Gatos Hacks is free for all
+                                participants—all food, swag, and other costs are covered.</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="accordian-card">
+                    <div class="accordian-sub-heading">
+                        <p>Registration</p>
+                    </div>
+                    <div class="accordian-item item2">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Where do I register?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Click <a class="faq-register" target="_blank"
+                                    href="/form/">here</a>
+                                to register!</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item2">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            When is the application deadline?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Registration will open in early June and close on August 31st. Click <a
+                                    class="faq-register" target="_blank"
+                                    href="/form/">here</a>
+                                to register!</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item2">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            What if I don't have a team?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Don't worry! We'll have team formation events at the beginning of the weekend
+                                geared towards helping you find people to work with.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordian-item item2">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Is there a code of conduct?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Yes! All hackers must follow the <a class="faq-register" target="_blank"
+                                    href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of
+                                    Conduct</a>. The packet must be signed in order to attend.</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item2">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            How do teams work?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Your team can have up to 3 people! You can select teammates when you register,
+                                and you can also form them during the actual event!</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item2">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Do you offer travel reimbursements?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Yes! Thanks to the generous support of our sponsors, Los Gatos Hacks is offering travel
+                                reimbursements on a case-by-case basis. Please fill out the <a class="faq-register-2"
+                                    target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">travel
+                                    reimbursement form</a> in addition to registering for Los Gatos Hacks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian-card">
+                    <div class="accordian-sub-heading">
+                        <p>In Person Logistics</p>
+                    </div>
+                    <div class="accordian-item item3">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Is Los Gatos Hacks Fully In Person?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Yes. Los Gatos Hacks will be fully in person and in person attendance on both days will
+                                be
+                                mandatory.</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item3">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            What will I eat?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>We’ll provide food for all meals from Saturday’s breakfast to Sunday’s lunch. Of
+                                course, we’ll also have an abundance of snacks and drinks throughout the hacking
+                                period.</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item3">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            What if I have dietary restrictions?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>No problem! If you have dietary restrictions, simply add them to your
+                                registration form when you sign up, and we will accommodate for you!
+                                Additionally, each meal will have vegan, gluten free, and vegetarian options for
+                                everyone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian-card">
+                    <div class="accordian-sub-heading">
+                        <p>Miscellaneous</p>
+                    </div>
+                    <div class="accordian-item item4">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            Where do I get more information?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Check out our Devpost and our info page for more info!</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item4">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            I have another question!
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Great, we're always open to questions! Feel free to contact us at <a class="faq-email"
+                                href="mailto:support@losgatoshacks.com">support@losgatoshacks.com</a>! Or,
+                                check out more info about Los Gatos Hacks on our info page!</p>
+                        </div>
+                    </div>
+                    <div class="accordian-item item4">
+
+                        <div class="accordian-link">
+                            <div class="accordian-image">
+                                <img src="/static/images/faq_star.svg">
+                            </div>
+                            What should I bring?
+                            <i class="icon ion-md-add"></i>
+                        </div>
+                        <div class="answer">
+                            <p>Bring a valid student ID, a laptop, chargers, and the signed Parent Packet. There
+                                will be a limited amount of laptops that will be available to borrow. Power
+                                strips, sleeping bags, eye masks, and toiletries are highly recommended.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <div class="telescope">
+        <img src="/static/images/telescope.png">
+    </div>
+    <svg class="transition-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+        preserveAspectRatio="none">
+        <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="transition"></path>
+    </svg>
+    <div class="about-content-1" id="about-content-1">
+        <div class="about-heading" id="about-heading">
+            <h2>Our Team</h2>
+        </div>
+        <span class="director-heading">Directors</span>
+        <div class="large-team-container">
+            <div class="col-6 large-team-card">
+                <div class="image-border">
+                    <div class="large-team-image">
+                        <img src="/static/images/Edwin.jpg">
+
+                    </div>
+                </div>
+                <div class="large-team-name overflow">
+                    <p>Edwin Hou</p>
+                </div>
+                <div class="large-team-position">
+                    <p>Founder & Operations Director</p>
+                </div>
+            </div>
+            <div class="col-6 large-team-card">
+                <div class="image-border">
+                    <div class="large-team-image">
+                        <div class="image-card-container">
+
+                        </div>
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+                <div class="large-team-name overflow">
+                    <p>Eric Hou</p>
+                </div>
+                <div class="large-team-position">
+                    <p>Founder & Tech Director</p>
+                </div>
+            </div>
+        </div>
+        <div class="director-container gellix threefr">
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+                <figcaption class="team-name overflow">
+                    <p>Henry Lee</p>
+                </figcaption>
+                <div class="team-position">
+                    <p>Outreach Director</p>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/Ashir.png">
+                    </div>
+                </div>
+                <div class="team-name overflow">
+                    <p>Ashir Rao</p>
+                </div>
+                <div class="team-position">
+                    <p>Sponsorships Director</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/Andreas.png">
+                    </div>
+                </div>
+                <div class="team-name overflow overflow">
+                    <p>Andreas Haapalainen</p>
+                </div>
+                <div class="team-position">
+                    <p>Design Director</p>
+                </div>
+            </div>
+
+        </div>
+        <span class="about-sub-heading">Sponsorship</span>
+        <div class="sponsorship-team-container gellix threefr">
+
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+                <div class="team-name overflow">
+                    <p>Julian Juan</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+
+                <div class="team-name overflow overflow">
+                    <p>Naitik Gupta</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+
+                <div class="team-name overflow overflow">
+                    <p>Abhinav Namboori</p>
+                </div>
+            </div>
+        </div>
+        <span class="about-sub-heading">Tech</span>
+        <div class="tech-team-container gellix twofr">
+            
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+                <div class="team-name overflow">
+                    <p>Gavyn Liu</p>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-border-2">
+                    <div class="team-image">
+                        <img src="/static/images/coming-soon.png">
+                    </div>
+                </div>
+                <figcaption class="team-name overflow overflow">
+                    <p>Michael Chekler</p>
+                </figcaption>
+            </div>
+        </div>
+        <!-- <span class="about-sub-heading">Outreach</span>
+        <div class="outreach-team-container gellix onefr">
+            
+            
+
+        </div> -->
+    </div>
+
+
+    </div>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-left">
+                <div class="footer-left-container">
+                    <div class="footer-logo">
+                        <a href="/">
+                            <img src="/static/images/losgatoshacksbigsimple.png">
+                        </a>
+                    </div>
+                    <div class="footer-socials">
+                        <ul role="list" class="list-2 left-list w-list-unstyled">
+                            <li style="list-style-type: none;">
+                                <a href="https://github.com/erichou1/losgatoshacks2023" target="_blank" class="w-inline-block">
+                                    <img src="https://assets-global.website-files.com/625c39b93541414104a1d654/625c8d419181da2418a66b2d_github.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/CuumumdXtg" target="_blank" class="w-inline-block">
+                                    <img src="https://assets-global.website-files.com/625c39b93541414104a1d654/625c8d4290b5f0189929d637_discord.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/losgatoshacks" target="_blank" class="w-inline-block"><img
+                                        src="https://assets-global.website-files.com/625c39b93541414104a1d654/625c8d416d89770f92cd01e2_twitter.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@losgatoshacks.com" class="w-inline-block"><img
+                                        src="https://assets-global.website-files.com/625c39b93541414104a1d654/6294b5a90a9ffe8e79e52115_Group%2037323.svg"
+                                        loading="lazy" alt="" class="image-3">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-register">
+                    <div class="footer-register-text">
+                        <h5>Register For the Los Gatos Hacks Hackathon</h5>
+                    </div>
+                    <a class="footer-register-button button" target="_blank"
+                        href="/form/">Register</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <div class="copyright">
+                    <h6>Copyright © 2023 Los Gatos Hacks, a 501(c)(3) non-profit organization</h6>
+                </div>
+            </div>
+            <div class="footer-bottom-right">
+                <div class="footer-nav-container">
+                    <a href="" class="footer-nav">
+                        <h6 class="footer-link-title">Home</h6>
+                    </a>
+                    <a href="/#content-2" class="footer-nav">
+                        <h6 class="footer-link-title">Information</h6>
+                    </a>
+                    <a href="/#faq-heading" class="footer-nav">
+                        <h6 class="footer-link-title">FAQ</h6>
+                    </a>
+                    <a href="/#schedule-heading" class="footer-nav">
+                        <h6 class="footer-link-title">Schedule</h6>
+                    </a>
+                    <a href="/sponsors/" class="footer-nav">
+                        <h6 class="footer-link-title">Sponsors</h6>
+                    </a>
+                    <a href="/#about-heading" class="footer-nav">
+                        <h6 class="footer-link-title">Team</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    var $saturn = $('.saturn');
+    var $win = $(window);
+    $win.on('scroll', function () {
+        var top = $win.scrollTop() / 15;
+        $saturn.css('transform', 'translate3d(0px,' + top + 'px, 0px)');
+    }
+    );
+
+    var $rocket = $('.rocket');
+    //var $win = $(window);
+    // $win.on('scroll', function () {
+    //         
+    //         var top2 = $win.scrollTop() / 5;
+    // $rocket.css('transform', 'translate3d(-' + top2 + 'px,-' + top2 + 'px,0px)'); 
+    //     }
+    //     );
+
+    var $asteroid = $('.asteroid');
+    var $win = $(window);
+    $win.on('scroll', function () {
+        var top3 = $win.scrollTop() / 5;
+        $asteroid.css('transform', 'translate3d(0px,' + top3 + 'px,0px)');
+    }
+    );
+    var $satellite = $('.satellite');
+    var $win = $(window);
+    $win.on('scroll', function () {
+        var top4 = $win.scrollTop() / 10;
+        $satellite.css('transform', 'translate3d(' + top4 + 'px,' + top4 + 'px, 0px)');
+    }
+    );
+    var $planet2 = $('.planet-2');
+    var $win = $(window);
+    $win.on('scroll', function () {
+        var top5 = $win.scrollTop() / 7;
+        $planet2.css('transform', 'translate3d(0px,' + top5 + 'px,0px)');
+    }
+    );
+    $(document).ready(function () {
+        $('.container ul.toggle').click(function () {
+            $(this).toggleClass('active');
+            $('.container .sidebar').toggleClass('active');
+        })
+    })
+    $(document).ready(function () {
+        document.querySelector("label.num0").click()
+        $('.menu a').click(function () {
+            $('.container ul.toggle').toggleClass('active');
+            $('.container .sidebar').toggleClass('active');
+        })
+    })
+    //         $(document).ready(function () {
+
+    // $('.faq-navbar').click(function () {
+
+    // $('html,body').animate({
+    // scrollTop: $("#faq-heading").offset().top},
+    //         'fast');
+    // });
+    // });
+    var winScrollTop = 0;
+
+    $.fn.is_on_screen = function () {
+        var win = $(window);
+        var viewport = {
+            top: win.scrollTop(),
+            left: win.scrollLeft()
+        };
+        //viewport.right = viewport.left + win.width();
+        viewport.bottom = viewport.top + win.height();
+
+        var bounds = this.offset();
+        //bounds.right = bounds.left + this.outerWidth();
+        bounds.bottom = bounds.top + this.outerHeight();
+
+        return (!(viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+    };
+
+    function parallax() {
+        var scrolled = $(window).scrollTop();
+        $('.rocket').each(function () {
+
+            if ($(this).is_on_screen()) {
+                var firstTop = $(this).offset().top;
+                var $rocket = $(this).find(".rocket-image");
+                var moveTop = (firstTop - winScrollTop) * 0.1 //speed;
+                $rocket.css('transform', 'translate3d(-' + moveTop + 'px,-' + moveTop + 'px,0px)');
+            }
+
+        });
+    }
+
+    $(window).scroll(function (e) {
+        winScrollTop = $(this).scrollTop();
+        parallax();
+    });
+
+    faq = 1;
+    $(document).ready(function () {
+        let cards = document.querySelectorAll(".accordian-link");
+        [...cards].forEach((card) => {
+
+            card.addEventListener("click", function () {
+                $(this).parent().find(".accordian-link, .answer").toggleClass("open");
+                if ($(this).find("div.accordian-image")[0].style.animation == "0.5s linear 0s 1 normal none running star-spin") {
+                    $(this).find("div.accordian-image")[0].style.animation = "star-spin-back 0.5s linear";
+                }
+                else {
+                    $(this).find("div.accordian-image")[0].style.animation = "star-spin 0.5s linear";
+                }
+
+            });
+        });
+    });
+
+    var $telescope = $('.telescope');
+    var $win = $(window);
+    $win.on('scroll', function () {
+        var top6 = $win.scrollTop() / 10;
+        $telescope.css('transform', 'translate3d(0px,' + top6 + 'px,0px)');;
+    }
+    );
+    function showSVG() {
+        var path = document.querySelector(".mainpath");
+        var length = path.getTotalLength();
+
+        path.style.transition = path.style.WebkitTransition = "none";
+        path.style.visibility = "visible";
+
+        path.style.strokeDasharray = length + " " + length;
+        path.style.strokeDashoffset = length;
+
+        path.getBoundingClientRect();
+
+        path.style.transition = path.style.WebkitTransition =
+            "stroke-dashoffset 2s ease-in-out";
+
+        path.style.strokeDashoffset = "0";
+
+        path = document.querySelector(".arrowpath");
+        length = path.getTotalLength();
+
+        path.style.transition = path.style.WebkitTransition = "none";
+        path.style.visibility = "visible";
+
+        path.style.strokeDasharray = length + " " + length;
+        path.style.strokeDashoffset = length;
+
+        path.getBoundingClientRect();
+
+        path.style.transition = path.style.WebkitTransition =
+            "stroke-dashoffset 2s ease-in-out";
+
+        path.style.strokeDashoffset = "0";
+    }
+    $(document).ready(function () {
+        if ($(".mainpath").is_on_screen()) {
+
+        }
+    });
+    var done = false
+    $(window).scroll(function (event) {
+
+        $(".mainpath").each(function (i, el) {
+            var el = $(el);
+            if (el.is_on_screen()) {
+                if (done == false) {
+                    showSVG();
+                    done = true
+                }
+            }
+        })
+    });
+
+    var shiftDay = "Saturday 9/9";
+
+    const leftarrow = document.getElementById("leftarrow");
+    const rightarrow = document.getElementById("rightarrow");
+    function shiftBackward() {
+        if (shiftDay == "Sunday 9/10") {
+            shiftDay = "Saturday 9/9";
+            document.getElementById("day").innerHTML = "Saturday 9/9";
+            document.getElementById("schedSun").style.display = "none";
+            document.getElementById("leftarrow-svg").style.fill = "gray";
+            document.getElementById("rightarrow").style.cursor = "pointer";
+            document.getElementById("leftarrow").style.cursor = "default";
+            document.getElementById("rightarrow-svg").style.fill = "gainsboro";
+            document.getElementById("schedSat").style.display = "block";
+        }
+    }
+
+    function shiftForward() {
+        if (shiftDay == "Saturday 9/9") {
+            shiftDay = "Sunday 9/10";
+            document.getElementById("day").innerHTML = "Sunday 9/10";
+            document.getElementById("schedSat").style.display = "none";
+            document.getElementById("leftarrow-svg").style.fill = "gainsboro";
+            document.getElementById("rightarrow").style.cursor = "default";
+            document.getElementById("leftarrow").style.cursor = "pointer";
+            document.getElementById("rightarrow-svg").style.fill = "gray";
+            document.getElementById("schedSun").style.display = "block";
+        }
+    }
+    $(document).ready(function () {
+
+        let overflows = document.querySelectorAll(".overflow");
+        for (let i = 0; i < overflows.length; i++) {
+            let overflow = overflows[i]
+            if (overflow.scrollWidth > overflow.offsetWidth) {
+
+                overflow.textContent = overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[0] + ' ' + overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[1][0] + '.'
+            }
+
+        }
+
+    })
+    $(window).resize(function () {
+        let overflows = document.querySelectorAll(".overflow");
+        for (let i = 0; i < overflows.length; i++) {
+            let overflow = overflows[i]
+            if (overflow.scrollWidth > overflow.offsetWidth) {
+                overflow.textContent = overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[0] + ' ' + overflow.textContent.split(/(\s+)/).filter(function (e) { return e.trim().length > 0; })[1][0] + '.'
+            }
+        }
+    });
+
+    console.log(`
+ o    o               8       o    o
+ 8    8               8       'b  d'
+o8oooo8 .oPYo. .oPYo. 8  .o    'bd'
+ 8    8 .oooo8 8    ' 8oP'     .PY.
+ 8    8 8    8 8    . 8 'b.   .P  Y.
+ 8    8 'YooP8 'YooP' 8  'o. .P    Y.
+`);
+
+    if (/webOS|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $("#warningheader").show();
+    } else {
+        $("#warningheader").hide();
+    }
+    function hide() {
+        $("#warningheader").hide();
+    }
+</script>
+</body>

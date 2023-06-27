@@ -10,5 +10,6 @@ urlpatterns = [
     path('sponsors/', views.sponsors, name="sponsors"),
     path('form/', views.form, name="form"),
     path('my-ajax-test/', views.myajaxtestview, name='ajax-test-view'),
+    path('email/', views.email, name='email'),
 ]
 
