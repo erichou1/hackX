@@ -175,7 +175,7 @@ html {
 .navbar-right-email {
     position: absolute;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
-    top: 1.8rem;
+    top: 1.85rem;
     margin-left: 6%;
     opacity: 0.6;
     cursor: pointer;
