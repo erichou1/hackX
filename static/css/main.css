@@ -1,11 +1,13 @@
 @font-face {
     font-family: "Katahdin Round";
     src: url('/static/KatahdinRound.otf');
-  }
-  @font-face {
+}
+
+@font-face {
     font-family: "Gellix";
     src: url('/static/gellix-11.otf');
-  }
+}
+
 * {
     font-family: "Katahdin Round", sans-serif;
 
@@ -72,6 +74,7 @@ html {
     left: 50%;
     transform: translateX(-50%);
     position: relative;
+    padding-right: 12%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -127,32 +130,35 @@ html {
 }
 
 .navbar-right {
-    padding-left: 8%;
-    padding-top: 1%;
-    padding-right: 13%;
+    padding-top: 2%;
+    padding-right: 3%;
 }
 
 .navbar-right-discord {
-    top: 2rem;
-    position: absolute;
     opacity: 0.6;
-    padding: 4px;
     cursor: pointer;
     transition: opacity 200ms ease;
     transition-duration: 200ms;
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: opacity;
+}
+
+.navbar-right-discord svg,
+.navbar-right-hackclub svg,
+.navbar-right-github svg,
+.navbar-right-github path {
+    width: 22px;
+    height: 22px;
 }
 
 .navbar-right-discord:hover {
-    opacity: 1;
+    opacity: 1 ;
+    color: white;
 }
 
-.navbar-right-devpost {
-    margin-left: 3.4%;
-    position: absolute;
-    top: 2.19rem;
+.navbar-right-hackclub {
+
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -160,23 +166,16 @@ html {
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: opacity;
-}
-
-.navbar-right-devpost img {
-    width: 21px;
-
-
-}
-
-.navbar-right-devpost:hover {
-    opacity: 1;
-}
-
-.navbar-right-email {
-    position: absolute;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
-    top: 1.95rem;
-    margin-left: 6%;
+}
+
+.navbar-right-hackclub:hover {
+    opacity: 1;
+}
+
+.navbar-right-github {
+
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -187,11 +186,7 @@ html {
 
 }
 
-.navbar-right-email img {
-    width: 2.4rem;
-}
-
-.navbar-right-email:hover {
+.navbar-right-github:hover {
     opacity: 1;
 }
 
@@ -1394,11 +1389,11 @@ html {
         height: 110px;
     }
 
-    .navbar-right-email {
+    .navbar-right-github {
         margin-left: 10%;
     }
 
-    .navbar-right-devpost {
+    .navbar-right-hackclub {
         margin-left: 5%;
     }
 
@@ -1408,11 +1403,11 @@ html {
 }
 
 @media (max-width: 645px) {
-    .navbar-right-email {
+    .navbar-right-github {
         margin-left: 15%;
     }
 
-    .navbar-right-devpost {
+    .navbar-right-hackclub {
         margin-left: 7.5%;
     }
 
@@ -2009,9 +2004,11 @@ html {
     .sponsors-heading {
         margin-top: 7.5% !important;
     }
+
     .slider-sub-heading {
         top: 1rem !important;
     }
+
     .slider-text {
         top: 15.5rem !important;
     }
@@ -2020,8 +2017,8 @@ html {
 @media (max-width: 991px) {
 
     .navbar-right-discord,
-    .navbar-right-devpost,
-    .navbar-right-email {
+    .navbar-right-hackclub,
+    .navbar-right-github {
         display: none;
     }
 
@@ -2074,8 +2071,8 @@ html {
 @media (max-width: 993px) {
 
     .navbar-right-discord,
-    .navbar-right-email,
-    .navbar-right-devpost {
+    .navbar-right-github,
+    .navbar-right-hackclub {
         display: none;
     }
 
@@ -2206,9 +2203,22 @@ html {
     font-size: 30px;
 }
 
+.social-icons-navbar {
+    display: flex;
+}
+
 .social-icon img {
     color: white;
 
+}
+
+.navbar-right-hackclub,
+.navbar-right-github {
+    --tw-space-x-reverse: 0;
+    margin-left: 0.75rem;
+    margin-left: calc(0.75rem*(1 - var(--tw-space-x-reverse)));
+    margin-right: 0;
+    margin-right: calc(0.75rem*var(--tw-space-x-reverse));
 }
 
 .social-icon-discord,
@@ -2242,9 +2252,6 @@ html {
     height: 2.75rem;
 }
 
-.social-icon {
-    margin-top: 5rem;
-}
 
 .social-icon-devpost {
     margin-right: 0;
@@ -2389,6 +2396,7 @@ html {
         height: 49rem !important;
     }
 }
+
 /* 
 @media (max-width: 410px) {
     .speakers {
@@ -2404,6 +2412,7 @@ html {
     .heading-1 {
         font-size: 5vw !important;
     }
+
     .speakers {
         height: 55rem !important;
     }
@@ -2426,8 +2435,9 @@ html {
     .csslider1>ul>div {
         margin-top: 2.5rem;
     }
-    
+
 }
+
 @media (max-width: 400px) {
     .faq-heading h2 {
         font-size: 10vw !important;
@@ -3065,6 +3075,7 @@ html {
         min-width: 70px;
         min-height: 70px;
     }
+
     .about-content-1 {
         padding-bottom: 6rem !important;
     }
@@ -4357,6 +4368,7 @@ tr:hover {
     }
 
 }
+
 @media (max-width: 400px) {
     .card-container {
         margin-top: 2.5rem;
@@ -4424,16 +4436,19 @@ tr:hover {
     -ms-grid-columns: 1fr !important;
     grid-template-columns: 1fr !important;
 }
+
 .prizes-image-1 {
 
     width: 15%;
     margin-left: 0.75rem;
 }
+
 .activities-image-1 {
 
     width: 15%;
     margin-left: 0.75rem;
 }
+
 .code-image-1 {
 
     width: 15%;

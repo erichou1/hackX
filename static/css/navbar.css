@@ -69,6 +69,7 @@ html {
     left: 50%;
     transform: translateX(-50%);
     position: relative;
+    padding-right: 12%;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -130,36 +131,40 @@ html {
     color: white;
 
 }
-
-.navbar-right {
-    padding-left: 8%;
-    padding-top: 1%;
-    padding-right: 13%;
-}
-
-.social-icons-navbar {}
-
 .navbar-right-discord {
-    top: 2.35rem;
-    position: absolute;
     opacity: 0.6;
-    padding: 4px;
     cursor: pointer;
     transition: opacity 200ms ease;
     transition-duration: 200ms;
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: opacity;
+    color: white;
+}
+
+.social-icons-navbar {
+    display: flex;
+}
+.navbar-right-discord svg,
+.navbar-right-hackclub svg,
+.navbar-right-github svg,
+.navbar-right-github path {
+    width: 22px;
+    height: 22px;
 }
 
 .navbar-right-discord:hover {
     opacity: 1;
+    color: white !important;
 }
 
-.navbar-right-devpost {
-    margin-left: 3.5%;
-    position: absolute;
-    top: 2.4rem;
+
+.navbar-right {
+    padding-top: 2%;
+    padding-right: 3%;
+}
+.navbar-right-hackclub {
+
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -167,24 +172,16 @@ html {
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: opacity;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
 }
 
-.navbar-right-devpost img {
-    width: 21px;
-
-
-}
-
-.navbar-right-devpost:hover {
+.navbar-right-hackclub:hover {
     opacity: 1;
 }
 
-.navbar-right-email {
-    position: absolute;
-    width: 18px;
+.navbar-right-github {
+
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
-    top: 2.05rem;
-    margin-left: 6.1%;
     opacity: 0.6;
     cursor: pointer;
     transition: opacity 200ms ease;
@@ -192,6 +189,19 @@ html {
     transition-timing-function: ease;
     transition-delay: 0s;
     transition-property: opacity;
+
+}
+.navbar-right-hackclub,
+.navbar-right-github {
+    --tw-space-x-reverse: 0;
+    margin-left: 0.75rem;
+    margin-left: calc(0.75rem*(1 - var(--tw-space-x-reverse)));
+    margin-right: 0;
+    margin-right: calc(0.75rem*var(--tw-space-x-reverse));
+}
+
+.navbar-right-github:hover {
+    opacity: 1;
 }
 
 .navbar-right-email img {
