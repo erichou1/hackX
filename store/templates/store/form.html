@@ -547,8 +547,13 @@ $('.form-next-button').on('click', function() {
     for(i=0;i<form_answer.length;i++){    
         if (form_answer[i].value.length === 0) {
             // console.log(form_answer[i].parentNode.querySelector("div.form-error"))
-            form_answer[i].parentNode.querySelector("div.form-error").style.display = "block"
-            success = false;
+            try{
+                form_answer[i].parentNode.querySelector("div.form-error").style.display = "block"
+                success = false;
+            }catch{
+            }
+            
+            
             if(page==3){
                 // console.log(form_answer[i].parentNode)
                 form_answer[i].parentNode.style.paddingBottom = '0rem'
@@ -556,7 +561,10 @@ $('.form-next-button').on('click', function() {
         }
         else{
             if(!form_answer[i].parentNode.className.includes("radio")){
+                try{
                 form_answer[i].parentNode.querySelector("div.form-error").style.display = "none"
+            }catch{}
+            
                 if(page==3){
                 form_answer[i].parentNode.style.paddingBottom = '1.75rem'
             }
