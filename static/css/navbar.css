@@ -413,9 +413,9 @@ html {
 }
 
 .social-icon-discord,
-.social-icon-devpost,
-.social-icon-email {
-    padding: 4px;
+.social-icon-hackclub,
+.social-icon-github {
+    
     cursor: pointer;
     transition: opacity 200ms ease;
     transition-duration: 200ms;
@@ -423,9 +423,33 @@ html {
     transition-delay: 0s;
     transition-property: opacity;
     margin-right: 0.5rem;
+    opacity: 0.6;
+    
 
 }
+.social-icon-github {
 
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(250%) contrast(103%);
+}
+.social-icon-discord svg,
+.social-icon-hackclub svg,
+.social-icon-github svg,
+.social-icon-github path {
+    width: 24px;
+    height: 24px;
+    
+    
+}
+.social-icon-discord svg,
+.social-icon-hackclub svg {
+    color: white;
+}
+.social-icon-discord:hover,
+.social-icon-hackclub:hover,
+.social-icon-github:hover{
+    opacity: 1;
+    text-decoration: none;
+}
 .menu-text {
     color: #787878;
     font-size: 14px;
@@ -581,12 +605,6 @@ html {
     .navbar-brand {
         left: 5%;
         margin-top: 7%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .navbar-right {
-        padding-top: 7%;
     }
 }
 
