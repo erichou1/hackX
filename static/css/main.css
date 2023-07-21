@@ -1252,7 +1252,7 @@ html {
     position: relative;
     width: 100%;
     max-width: 1127px;
-    margin-top: 40px;
+    margin-top: 10px;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
     -webkit-box-pack: center;
@@ -1293,6 +1293,7 @@ html {
 .sponsors-image img {
     width: 96px;
     height: 96px;
+    border-radius: 0.75rem;
 }
 
 .sponsors-name {
@@ -1318,7 +1319,7 @@ html {
 .asteroid {
     position: absolute;
     left: -15%;
-    top: 150rem;
+    top: 90rem;
     z-index: 3;
 }
 
@@ -1967,7 +1968,13 @@ html {
         transform: translateX(-50%);
         place-self: center;
     }
-
+    .sponsors-container-special {
+        grid-template-columns: 1fr 1fr 1fr 1fr !important;
+        -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr !important;
+        left: 50%;
+        transform: translateX(-50%);
+        place-self: center;
+    }
     #header {
         margin-top: 8%;
     }
@@ -4186,7 +4193,7 @@ tr:hover {
 @media (max-width: 980px) {
 
     .asteroid {
-        top: 160rem;
+        top: 105rem;
 
     }
 }
@@ -4197,7 +4204,7 @@ tr:hover {
     }
 
     .asteroid {
-        top: 170rem;
+        top: 115rem;
 
     }
 
@@ -4209,7 +4216,7 @@ tr:hover {
 @media (max-width: 900px) {
 
     .asteroid {
-        top: 158rem;
+        top: 120rem;
 
     }
 }
@@ -4217,7 +4224,7 @@ tr:hover {
 @media (max-width: 890px) {
 
     .asteroid {
-        top: 165rem;
+        top: 125rem;
 
     }
 }
@@ -4225,7 +4232,7 @@ tr:hover {
 @media (max-width: 840px) {
 
     .asteroid {
-        top: 170rem;
+        top: 130rem;
 
     }
 }
@@ -4468,4 +4475,82 @@ tr:hover {
 
     width: 15%;
     margin-left: 0.75rem;
+}
+.bronze-header {
+    font-size: 1.8rem;
+
+    text-align: center;
+        color: rgb(113 63 18);
+}
+.sponsors-card-bronze {
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    width: 12rem;
+}
+.sponsor-image-bronze img {
+    width: 120px;
+    height: 120px;
+}
+.sponsors-container {
+    position: relative;
+    width: 100%;
+    max-width: 1127px;
+    margin-top: 10px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    display: grid;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+.sponsors-name-bronze {
+    font-size: 22px;
+}
+.special-header {
+    padding-top: 2rem;
+    color: #c9deff;
+    font-size: 1.8rem;
+
+    text-align: center;
+}
+.sponsors-container-special {
+    position: relative;
+    width: 100%;
+    max-width: 1127px;
+    margin-top: 10px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    justify-items: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    display: grid;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
 }
