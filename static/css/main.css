@@ -4554,3 +4554,6 @@ tr:hover {
     transform: translateX(-50%);
     position: relative;
 }
+.sponsor-href:hover {
+    text-decoration:none;
+}
