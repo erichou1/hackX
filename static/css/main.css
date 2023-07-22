@@ -4557,3 +4557,6 @@ tr:hover {
 .sponsor-href:hover {
     text-decoration:none;
 }
+#leftarrow-svg {
+    fill: gray;
+}
