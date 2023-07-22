@@ -169,7 +169,7 @@
                     <p>Los Gatos Hacks 2023</p>
                 </div>
                 <div class="sub-heading">
-                    <p>9.09-9.10</p>
+                    <p>1.20-1.21</p>
                 </div>
                 <a class="register-button button" target="_blank"
                     href="/form/">Register
@@ -1497,13 +1497,13 @@
         })
     });
 
-    var shiftDay = "Saturday 9/9";
+    var shiftDay = "Saturday 1/20";
 
     const leftarrow = document.getElementById("leftarrow");
     const rightarrow = document.getElementById("rightarrow");
     function shiftBackward() {
-        if (shiftDay == "Sunday 9/10") {
-            shiftDay = "Saturday 9/9";
+        if (shiftDay == "Sunday 1/20") {
+            shiftDay = "Saturday 1/21";
             document.getElementById("day").innerHTML = "Saturday 9/9";
             document.getElementById("schedSun").style.display = "none";
             document.getElementById("leftarrow-svg").style.fill = "gray";
@@ -1515,9 +1515,9 @@
     }
 
     function shiftForward() {
-        if (shiftDay == "Saturday 9/9") {
-            shiftDay = "Sunday 9/10";
-            document.getElementById("day").innerHTML = "Sunday 9/10";
+        if (shiftDay == "Saturday 1/20") {
+            shiftDay = "Sunday 1/21";
+            document.getElementById("day").innerHTML = "Sunday 1/21";
             document.getElementById("schedSat").style.display = "none";
             document.getElementById("leftarrow-svg").style.fill = "gainsboro";
             document.getElementById("rightarrow").style.cursor = "default";
