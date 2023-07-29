@@ -4518,3 +4518,47 @@ tr:hover {
 #leftarrow-svg {
     fill: gray;
 }
+.made-header {
+        padding-top: 2rem;
+    color: rgb(179, 179, 179);
+    font-size: 1.8rem;
+
+    text-align: center;
+}
+.hbc-img {
+    height: 100%;
+    padding-top: 24px;
+}
+.made-container {
+    height: 7rem;
+}
+@media (max-width: 800px) {
+    .made-container {
+        height: 6rem;
+    }
+    }
+
+.silver-header {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #c0c0c0;
+}
+.sponsors-card-silver {
+    
+    position: relative;
+    width: 14rem;
+}
+.sponsor-image-silver img {
+    width: 165px;
+    height: 180px;
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+.sponsor-image-silver {
+   
+}
+.sponsors-name-silver {
+    font-size: 22px;
+}
