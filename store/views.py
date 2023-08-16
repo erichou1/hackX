@@ -30,9 +30,9 @@ def store(request):
 def error_404 (request, exception):
     return render(request, 'store/404.html')
 
-def sponsors(request):
-    context = {}
-    return render(request, 'store/sponsors.html')
+# def sponsors(request):
+#     context = {}
+#     return render(request, 'store/sponsors.html')
 
 def form(request):
     context = {}

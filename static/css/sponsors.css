@@ -1314,6 +1314,7 @@ html {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     width: 100%;
+
 }
 
 .prospectus th,
@@ -1351,6 +1352,7 @@ html {
 .prospectus-head-tr {
     font-size: 1rem;
     line-height: 1.5rem;
+    border-radius: 2rem;
 }
 
 .prospectus-body-td {
@@ -1358,7 +1360,7 @@ html {
     color: white;
     padding-bottom: 0.75rem;
     padding-top: 0.75rem;
-    background-color: rgb(82 165 199);
+    background-color: rgb(33 86 91);
     width: 45%;
     text-transform: uppercase;
 }
