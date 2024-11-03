@@ -1036,7 +1036,14 @@ input::placeholder {
     border-radius: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin-right: 10%;
+    margin-left: 10%;
     opacity: 0.9;
+    position: absolute;
+left: 0;
+right: 0;
+text-align: center;
+
   }
   .form-heading {
     text-align: center;
